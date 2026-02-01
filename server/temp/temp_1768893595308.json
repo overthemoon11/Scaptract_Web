@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "source": "PPStructureV3",
+    "total_length": 9814,
+    "line_count": 126
+  },
+  "content": {
+    "Preparation of Papers in Two-Column Format  For Conference Proceedings Sponsored by IEEE ": {
+      "Preparing your Electronic Paper ": {
+        "I I. HELPFUL HINTS ": "",
+        "A. Figures and Tables ": "Position figures and tables at the tops and bottoms of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be centered below the figures; table captions should be centered above. Avoid placing figures and tables before their first mention in the text. Use the abbreviation \"Fig. 1,\" even at the beginning of a sentence.\n\nFigure axis labels are often a source of confusion. Use words rather than symbols. For example, write \"Magnetization,\" or \"Magnetization $(\\mathsf{M})^{\\mathsf{w}}$ not just \"M.\" Put units in parentheses.Do not label axes only with units. In the example, write \"Magnetization $(\\mathrm{A}/\\mathrm{m})$ or \"Magnetization (A·m1).\" Do not label axes with a ratio of quantities and units. For example,write \"Temperature (K),\" not \"Temperature/K.\"\n\nMultipliers can be  especially  confusing.  Write \"Magnetization (kA/m)\" or \"Magnetization (10³ A/m).\"Figures labels should legible, about 10-point type.",
+        "B. References ": "Number citations consecutively in square brackets [1].Punctuation follows the bracket [2]. Refer simply to the reference number, as in [3].Use \"Ref.[3]\" or \"Reference [3]\"at the beginning of a sentence: \"Reference [3] was the first .….\"\n\nNumber footnotes separately in superscripts. Place the actual footnote at the bottom of the column in which it was cited. Do \n\n[]\n\nnot put footnotes in the reference list. Use letters for table footnotes (see Table I). IEEE Transactions no longer use a journal prefix before the volume number. For example, use \"IEEE Trans. Magn., vol, 25.\" not \"vol. MAG-25.\"\n\nTa or more. Papers that have not been published, even if they have been submitted for publication, should be cited as \"unpublished\" [4]. Papers that have been accepted for publication should be cited as \"in press\"[5].In a paper titl,capitalize the first word and all other words except for conjunctions, prepositions less than seven letters, and prepositional phrases.\n\nFor papers published in translated journals, first give the English citation, then the original foreign-language citation [6].",
+        "C. Abbreviations and Acronyms ": "Define abbreviations and acronyms the first time they are used in the text, even if they have been defined in the abstract.Abbreviations such as IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use abbreviations in the title unless they are unavoidable.",
+        "D. Equations ": "Number equations consecutively with equation numbers in parentheses flush with the right margin, as in (1). To make your equations more compact, you may use the solidus (/),the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols.Use an en dash (−) rather than a hyphen for a minus sig. Use parentheses to avoid ambiguities in denominators. Punctuate equations with commas or periods when they are part of a sentence, as in \n\n$$a+b=c.$$\n\nSymbols in your equation should be defined before the equation appears or immediately following. Use \"(1),\" not \"Eq. (1)\" or \"equation (1),\" except at the beginning of a sentence: \"Equation (1) is ..77",
+        "E. Other Recommendations ": "The Roman numerals used to number the section headings are optional. If you do use them do not number ACKNOWLEDGMENT and REFERENCES, and begin Subheadings with letters.Use two spaces after periods (full stops).Hyphenate complex modifiers:\"zero-field-cooled magnetization.\" Avoid dangling participles, such as, \"Using (1), the potential was calculated.\"  Write instead,\"The potential was calculated using (1),\" or \"Using (1), we calculated the potential.\"\n\nUse a zero before decimal points: \"0.25,\" not \".25.\" Use \"cm3,\" not \"cc.\"  Do not mix complete spellings and abbreviations of units: \"Wb/m2\" or \"webers per square meter,,\"not \"webers/m.\" Spell units when they appear in the text:\"…a few henries,\"not\"…afew H.\"Ifyour native language is not English, try to get a native English-speaking colleague to proofread your paper. Do not add page numbers.",
+        "I II. UNITS ": "Use either SI (MKS) or CGS as primary units. (SI units are encouraged. English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as \"3.5-inch disk drive.\"\n\nAvoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.",
+        "I V. SOME COMMON MISTAKES ": "The word \"data\" is plural, not singular. The subscript for the permeability of vacuum is zero, not a lower case \"o.\"In American English, periods and commas are within the quotation marks, like \"this period.\" A parenthetical statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.) A graph with a graph is an \"inset,\"not an \"insert.\" The word alternatively is preferred to the word \"alternately\"  (unless you mean something that alternates). Do not use the word \"essentially\" to mean \"approximately\" or \"effectively.\" Be aware of the different meanings of the homophones \"affect\" and \"effect,\"\"complement\" and \"compliment,\" \"discreet\" and \"discrete,\"\"principal\" and \"principle.\"  Do not confuse \"imply\" and \"infer.\" The prefix \"non\" is not a word; it should be joined to the word it modifies, usually without a hyphen. There is no period after the \"et\" in the Latin abbreviation \"et al.\" The abbreviation \"i.e.\" means \"that is,,\" and the abbreviation \"e.g.\"3means \"for example.\" An excellent style manual for science writers is [7]."
+      },
+      "ACKNOWLEDGMENT ": "The preferred spelling of the word \"acknowledgment\"in America is without an $ ``\\mathbf{e}''$ after the \"g.\"Try to avoid the stilted expression, \"One of us (R.B.G.) thanks .….\" Instead,try \"R.B.G. thanks ….\" Put sponsor acknowledgments in the unnumbered footnotes on the first page.",
+      "REFERENCES ": "[1] G. Eason, B. Noble, and IN. Snedon,\"On certain inealso Lipschitz-Hankel type involving products of Bessel functions,  Phil.Trans. Roy. Soc.London,vol.A247, pp.529-551,April 1955.[2]J.Clerk Maxwell,A Treatise on Electricity and Magnetism,3 ed, vol.2. Oxford: Clarendon, 1892, pp.68-73.\n[3]IS. Jacobs and C.P. Bean, \"Fine particles,thin films and exchange anisotropy,\"in Magnetism, vol. II, G.T. Rado and H. Suhl, Ed. New York: Academic, 1963, pp.271-350.\n[4]K.Elissa, \"Title of paper if known,\"unpublished.\n[5]R. Nicole,\"Titleof paper with only first word capitalized,\" J. Name Stand. Abbrev., in press.\n[6]Y.Yorozu, M. Hirano, K.Oka, and Y.Tagawa, \"Electron spectroscopy studies on magneto-optical media and plastic substrate interface.\" IEEE Transl.J. Magn. Japan,vol. 2, pp.740-741,August 1987 [Digests 9h Annual Conf. Magnetics Japan, p.301, 1982].\n[7]M. Young, The Technical Writer's Handbook. Mill Valley,CA:\nUniversity Science, 1989.\n\n[]"
+    }
+  },
+  "structured_elements": {
+    "tables": [
+      {
+        "type": "table",
+        "html": "<div style=\"text-align: center;\">TABLE I </div>\n\n\n<div style=\"text-align: center;\">TYPE SIZES FOR PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td rowspan=\"2\">Type Size (pts.)</td><td colspan=\"3\">Appearance</td></tr><tr><td>Regular</td><td>Bold</td><td>Italic</td></tr><tr><td rowspan=\"4\">6 8 9 10 11 24</td><td>Table captions,a table superscripts</td><td></td><td></td></tr><tr><td>Section titles, references, tables, table namesafirst letters in table captions,\" figure captions, footnotes, text subscripts, and superscripts</td><td></td><td></td></tr><tr><td></td><td>Abstract</td><td></td></tr><tr><td>Authors' affiliations, main text, equations,first letters in section titlesa</td><td></td><td>Subheading</td></tr><tr><td>Authors'names</td><td></td><td></td><td></td></tr><tr><td>Paper title</td><td></td><td></td><td></td></tr></table></body></html></div>",
+        "rows": [
+          [
+            "Type Size (pts.)",
+            "Appearance"
+          ],
+          [
+            "Regular",
+            "Bold",
+            "Italic"
+          ],
+          [
+            "6 8 9 10 11 24",
+            "Table captions,a table superscripts",
+            "",
+            ""
+          ],
+          [
+            "Section titles, references, tables, table namesafirst letters in table captions,\" figure captions, footnotes, text subscripts, and superscripts",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Abstract",
+            ""
+          ],
+          [
+            "Authors' affiliations, main text, equations,first letters in section titlesa",
+            "",
+            "Subheading"
+          ],
+          [
+            "Authors'names",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Paper title",
+            "",
+            "",
+            ""
+          ]
+        ],
+        "row_count": 8,
+        "column_count": 2
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "src": "imgs/img_in_chart_box_695_382_1106_721.jpg",
+        "alt": "Image",
+        "width": "33%",
+        "html": "<div style=\"text-align: center;\">TABLE I </div>\n\n\n<div style=\"text-align: center;\">TYPE SIZES FOR PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td rowspan=\"2\">Type Size (pts.)</td><td colspan=\"3\">Appearance</td></tr><tr><td>Regular</td><td>Bold</td><td>Italic</td></tr><tr><td rowspan=\"4\">6 8 9 10 11 24</td><td>Table captions,a table superscripts</td><td></td><td></td></tr><tr><td>Section titles, references, tables, table namesafirst letters in table captions,\" figure captions, footnotes, text subscripts, and superscripts</td><td></td><td></td></tr><tr><td></td><td>Abstract</td><td></td></tr><tr><td>Authors' affiliations, main text, equations,first letters in section titlesa</td><td></td><td>Subheading</td></tr><tr><td>Authors'names</td><td></td><td></td><td></td></tr><tr><td>Paper title</td><td></td><td></td><td></td></tr></table></body></html></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_chart_box_695_382_1106_721.jpg\" alt=\"Image\" width=\"33%\" /></div>"
+      }
+    ],
+    "equations": [
+      {
+        "type": "equation",
+        "latex": "\\text{\"}j\\text{\"}",
+        "full_match": "$ \\text{\"}j\\text{\"}$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\mathrm{top}=0.75",
+        "full_match": "$\\mathrm{top}=0.75$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\mathrm{b o t t o m}=1",
+        "full_match": "$\\mathrm{b o t t o m}=1$"
+      },
+      {
+        "type": "equation",
+        "latex": "t=0.625",
+        "full_match": "$t=0.625$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\mathrm{top}=19",
+        "full_match": "$\\mathrm{top}=19$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\mathrm{bottom}=43",
+        "full_match": "$\\mathrm{bottom}=43$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\mathrm{side}=13",
+        "full_match": "$\\mathrm{side}=13$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\alpha=45.9\\mathrm{kV}",
+        "full_match": "$\\alpha=45.9\\mathrm{kV}$"
+      },
+      {
+        "type": "equation",
+        "latex": "\\beta=5.08",
+        "full_match": "$\\beta=5.08$"
+      },
+      {
+        "type": "equation",
+        "latex": "(\\mathsf{M})^{\\mathsf{w}}",
+        "full_match": "$(\\mathsf{M})^{\\mathsf{w}}$"
+      },
+      {
+        "type": "equation",
+        "latex": "(\\mathrm{A}/\\mathrm{m})",
+        "full_match": "$(\\mathrm{A}/\\mathrm{m})$"
+      },
+      {
+        "type": "equation",
+        "latex": "a+b=c.",
+        "full_match": "$$a+b=c.$$"
+      },
+      {
+        "type": "equation",
+        "latex": "``\\mathbf{e}''",
+        "full_match": "$ ``\\mathbf{e}''$"
+      }
+    ],
+    "sections": [
+      {
+        "type": "section",
+        "level": 1,
+        "title": "Preparation of Papers in Two-Column Format  For Conference Proceedings Sponsored by IEEE",
+        "content": "J.Q. Author IEEE Conference Publishing 445 Hoes Lane Piscataway, NJ 08854 USA Abstract- These instructions give you basic guidelines for preparing papers for conference proceedings."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "I. INTRODUCTION",
+        "content": "Your goal is to simulate the usual appearance of papers in an IEEE conference proceedings. For items not addressed in these instructions, please contact your Publications chair."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Preparing your Electronic Paper",
+        "content": "Prepare your paper in full-size format, on US letter paper 8½ by 11 inches). For A4 paper, use the A4 settings.\n\nType Sizes and Typefaces: Follow the type sizes specified in Table I. As an aid in gauging type size, 1 point is about 0.35mm. The size of the lowercase letter $ \\text{\"}j\\text{\"}$ will give the point size. Times New Roman is the preferred font.\n\n1)US Letter Margins:$\\mathrm{top}=0.75$ inches,$\\mathrm{b o t t o m}=1$ inch,side $t=0.625$ inches. Each column measures 3.5 inches wide,with a 0.25-inch measurement between the columns.\n\n2) A4 Margins:$\\mathrm{top}=19$ mm,$\\mathrm{bottom}=43$ mm,$\\mathrm{side}=13$ mm. The A4 column width is 88 mm (3.45 in). The space between the two columns is 4 mm (0.17 mm). Paragraph indentation is 3.5 mm (0.14 in).\n\n\n\nLeft- and right-justify your columns. Use tables and figures to adjust column length. On the last page of your paper, adjust the lengths of the columns so that they are equal. Use automatic hyphenation and spell checking. Digitize or paste down figures.\n\n\n\n<div style=\"text-align: center;\">TABLE I </div>\n\n\n<div style=\"text-align: center;\">TYPE SIZES FOR PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td rowspan=\"2\">Type Size (pts.)</td><td colspan=\"3\">Appearance</td></tr><tr><td>Regular</td><td>Bold</td><td>Italic</td></tr><tr><td rowspan=\"4\">6 8 9 10 11 24</td><td>Table captions,a table superscripts</td><td></td><td></td></tr><tr><td>Section titles, references, tables, table namesafirst letters in table captions,\" figure captions, footnotes, text subscripts, and superscripts</td><td></td><td></td></tr><tr><td></td><td>Abstract</td><td></td></tr><tr><td>Authors' affiliations, main text, equations,first letters in section titlesa</td><td></td><td>Subheading</td></tr><tr><td>Authors'names</td><td></td><td></td><td></td></tr><tr><td>Paper title</td><td></td><td></td><td></td></tr></table></body></html></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_chart_box_695_382_1106_721.jpg\" alt=\"Image\" width=\"33%\" /></div>\n\n\n<div style=\"text-align: center;\">Fig.1.Weibull distribution of 60 Hz breakdown voltages 11 cables $\\alpha=45.9\\mathrm{kV}$ 'peak,$\\beta=5.08$ Confidence Intervals 95%</div>"
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "I I. HELPFUL HINTS",
+        "content": ""
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "A. Figures and Tables",
+        "content": "Position figures and tables at the tops and bottoms of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be centered below the figures; table captions should be centered above. Avoid placing figures and tables before their first mention in the text. Use the abbreviation \"Fig. 1,\" even at the beginning of a sentence.\n\nFigure axis labels are often a source of confusion. Use words rather than symbols. For example, write \"Magnetization,\" or \"Magnetization $(\\mathsf{M})^{\\mathsf{w}}$ not just \"M.\" Put units in parentheses.Do not label axes only with units. In the example, write \"Magnetization $(\\mathrm{A}/\\mathrm{m})$ or \"Magnetization (A·m1).\" Do not label axes with a ratio of quantities and units. For example,write \"Temperature (K),\" not \"Temperature/K.\"\n\nMultipliers can be  especially  confusing.  Write \"Magnetization (kA/m)\" or \"Magnetization (10³ A/m).\"Figures labels should legible, about 10-point type."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "B. References",
+        "content": "Number citations consecutively in square brackets [1].Punctuation follows the bracket [2]. Refer simply to the reference number, as in [3].Use \"Ref.[3]\" or \"Reference [3]\"at the beginning of a sentence: \"Reference [3] was the first .….\"\n\nNumber footnotes separately in superscripts. Place the actual footnote at the bottom of the column in which it was cited. Do \n\n---\n\nnot put footnotes in the reference list. Use letters for table footnotes (see Table I). IEEE Transactions no longer use a journal prefix before the volume number. For example, use \"IEEE Trans. Magn., vol, 25.\" not \"vol. MAG-25.\"\n\nTa or more. Papers that have not been published, even if they have been submitted for publication, should be cited as \"unpublished\" [4]. Papers that have been accepted for publication should be cited as \"in press\"[5].In a paper titl,capitalize the first word and all other words except for conjunctions, prepositions less than seven letters, and prepositional phrases.\n\n\n\nFor papers published in translated journals, first give the English citation, then the original foreign-language citation [6]."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "C. Abbreviations and Acronyms",
+        "content": "Define abbreviations and acronyms the first time they are used in the text, even if they have been defined in the abstract.Abbreviations such as IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use abbreviations in the title unless they are unavoidable."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "D. Equations",
+        "content": "Number equations consecutively with equation numbers in parentheses flush with the right margin, as in (1). To make your equations more compact, you may use the solidus (/),the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols.Use an en dash (−) rather than a hyphen for a minus sig. Use parentheses to avoid ambiguities in denominators. Punctuate equations with commas or periods when they are part of a sentence, as in \n\n\n\n$$a+b=c.$$\n\nSymbols in your equation should be defined before the equation appears or immediately following. Use \"(1),\" not \"Eq. (1)\" or \"equation (1),\" except at the beginning of a sentence: \"Equation (1) is ..77"
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "E. Other Recommendations",
+        "content": "The Roman numerals used to number the section headings are optional. If you do use them do not number ACKNOWLEDGMENT and REFERENCES, and begin Subheadings with letters.Use two spaces after periods (full stops).Hyphenate complex modifiers:\"zero-field-cooled magnetization.\" Avoid dangling participles, such as, \"Using (1), the potential was calculated.\"  Write instead,\"The potential was calculated using (1),\" or \"Using (1), we calculated the potential.\"\n\nUse a zero before decimal points: \"0.25,\" not \".25.\" Use \"cm3,\" not \"cc.\"  Do not mix complete spellings and abbreviations of units: \"Wb/m2\" or \"webers per square meter,,\"not \"webers/m.\" Spell units when they appear in the text:\"…a few henries,\"not\"…afew H.\"Ifyour native language is not English, try to get a native English-speaking colleague to proofread your paper. Do not add page numbers."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "I II. UNITS",
+        "content": "Use either SI (MKS) or CGS as primary units. (SI units are encouraged. English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as \"3.5-inch disk drive.\"\n\nAvoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "I V. SOME COMMON MISTAKES",
+        "content": "The word \"data\" is plural, not singular. The subscript for the permeability of vacuum is zero, not a lower case \"o.\"In American English, periods and commas are within the quotation marks, like \"this period.\" A parenthetical statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.) A graph with a graph is an \"inset,\"not an \"insert.\" The word alternatively is preferred to the word \"alternately\"  (unless you mean something that alternates). Do not use the word \"essentially\" to mean \"approximately\" or \"effectively.\" Be aware of the different meanings of the homophones \"affect\" and \"effect,\"\"complement\" and \"compliment,\" \"discreet\" and \"discrete,\"\"principal\" and \"principle.\"  Do not confuse \"imply\" and \"infer.\" The prefix \"non\" is not a word; it should be joined to the word it modifies, usually without a hyphen. There is no period after the \"et\" in the Latin abbreviation \"et al.\" The abbreviation \"i.e.\" means \"that is,,\" and the abbreviation \"e.g.\"3means \"for example.\" An excellent style manual for science writers is [7]."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "ACKNOWLEDGMENT",
+        "content": "The preferred spelling of the word \"acknowledgment\"in America is without an $ ``\\mathbf{e}''$ after the \"g.\"Try to avoid the stilted expression, \"One of us (R.B.G.) thanks .….\" Instead,try \"R.B.G. thanks ….\" Put sponsor acknowledgments in the unnumbered footnotes on the first page."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "REFERENCES",
+        "content": "[1] G. Eason, B. Noble, and IN. Snedon,\"On certain inealso Lipschitz-Hankel type involving products of Bessel functions,  Phil.Trans. Roy. Soc.London,vol.A247, pp.529-551,April 1955.[2]J.Clerk Maxwell,A Treatise on Electricity and Magnetism,3 ed, vol.2. Oxford: Clarendon, 1892, pp.68-73.\n[3]IS. Jacobs and C.P. Bean, \"Fine particles,thin films and exchange anisotropy,\"in Magnetism, vol. II, G.T. Rado and H. Suhl, Ed. New York: Academic, 1963, pp.271-350.\n[4]K.Elissa, \"Title of paper if known,\"unpublished.\n[5]R. Nicole,\"Titleof paper with only first word capitalized,\" J. Name Stand. Abbrev., in press.\n[6]Y.Yorozu, M. Hirano, K.Oka, and Y.Tagawa, \"Electron spectroscopy studies on magneto-optical media and plastic substrate interface.\" IEEE Transl.J. Magn. Japan,vol. 2, pp.740-741,August 1987 [Digests 9h Annual Conf. Magnetics Japan, p.301, 1982].\n[7]M. Young, The Technical Writer's Handbook. Mill Valley,CA:\nUniversity Science, 1989.\n\n\n---"
+      }
+    ],
+    "table_count": 1,
+    "image_count": 1,
+    "equation_count": 13,
+    "section_count": 13
+  },
+  "raw_markdown": "# Preparation of Papers in Two-Column Format  For Conference Proceedings Sponsored by IEEE \n\nJ.Q. Author IEEE Conference Publishing 445 Hoes Lane Piscataway, NJ 08854 USA Abstract- These instructions give you basic guidelines for preparing papers for conference proceedings.\n\n### I. INTRODUCTION \n\nYour goal is to simulate the usual appearance of papers in an IEEE conference proceedings. For items not addressed in these instructions, please contact your Publications chair.\n\n## Preparing your Electronic Paper \n\nPrepare your paper in full-size format, on US letter paper 8½ by 11 inches). For A4 paper, use the A4 settings.\n\nType Sizes and Typefaces: Follow the type sizes specified in Table I. As an aid in gauging type size, 1 point is about 0.35mm. The size of the lowercase letter $ \\text{\"}j\\text{\"}$ will give the point size. Times New Roman is the preferred font.\n\n1)US Letter Margins:$\\mathrm{top}=0.75$ inches,$\\mathrm{b o t t o m}=1$ inch,side $t=0.625$ inches. Each column measures 3.5 inches wide,with a 0.25-inch measurement between the columns.\n\n2) A4 Margins:$\\mathrm{top}=19$ mm,$\\mathrm{bottom}=43$ mm,$\\mathrm{side}=13$ mm. The A4 column width is 88 mm (3.45 in). The space between the two columns is 4 mm (0.17 mm). Paragraph indentation is 3.5 mm (0.14 in).\n\n\n\nLeft- and right-justify your columns. Use tables and figures to adjust column length. On the last page of your paper, adjust the lengths of the columns so that they are equal. Use automatic hyphenation and spell checking. Digitize or paste down figures.\n\n\n\n<div style=\"text-align: center;\">TABLE I </div>\n\n\n<div style=\"text-align: center;\">TYPE SIZES FOR PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td rowspan=\"2\">Type Size (pts.)</td><td colspan=\"3\">Appearance</td></tr><tr><td>Regular</td><td>Bold</td><td>Italic</td></tr><tr><td rowspan=\"4\">6 8 9 10 11 24</td><td>Table captions,a table superscripts</td><td></td><td></td></tr><tr><td>Section titles, references, tables, table namesafirst letters in table captions,\" figure captions, footnotes, text subscripts, and superscripts</td><td></td><td></td></tr><tr><td></td><td>Abstract</td><td></td></tr><tr><td>Authors' affiliations, main text, equations,first letters in section titlesa</td><td></td><td>Subheading</td></tr><tr><td>Authors'names</td><td></td><td></td><td></td></tr><tr><td>Paper title</td><td></td><td></td><td></td></tr></table></body></html></div>\n\n\n<div style=\"text-align: center;\"><img src=\"imgs/img_in_chart_box_695_382_1106_721.jpg\" alt=\"Image\" width=\"33%\" /></div>\n\n\n<div style=\"text-align: center;\">Fig.1.Weibull distribution of 60 Hz breakdown voltages 11 cables $\\alpha=45.9\\mathrm{kV}$ 'peak,$\\beta=5.08$ Confidence Intervals 95%</div>\n\n\n### I I. HELPFUL HINTS \n\n### A. Figures and Tables \n\nPosition figures and tables at the tops and bottoms of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be centered below the figures; table captions should be centered above. Avoid placing figures and tables before their first mention in the text. Use the abbreviation \"Fig. 1,\" even at the beginning of a sentence.\n\nFigure axis labels are often a source of confusion. Use words rather than symbols. For example, write \"Magnetization,\" or \"Magnetization $(\\mathsf{M})^{\\mathsf{w}}$ not just \"M.\" Put units in parentheses.Do not label axes only with units. In the example, write \"Magnetization $(\\mathrm{A}/\\mathrm{m})$ or \"Magnetization (A·m1).\" Do not label axes with a ratio of quantities and units. For example,write \"Temperature (K),\" not \"Temperature/K.\"\n\nMultipliers can be  especially  confusing.  Write \"Magnetization (kA/m)\" or \"Magnetization (10³ A/m).\"Figures labels should legible, about 10-point type.\n\n### B. References \n\nNumber citations consecutively in square brackets [1].Punctuation follows the bracket [2]. Refer simply to the reference number, as in [3].Use \"Ref.[3]\" or \"Reference [3]\"at the beginning of a sentence: \"Reference [3] was the first .….\"\n\nNumber footnotes separately in superscripts. Place the actual footnote at the bottom of the column in which it was cited. Do \n\n---\n\nnot put footnotes in the reference list. Use letters for table footnotes (see Table I). IEEE Transactions no longer use a journal prefix before the volume number. For example, use \"IEEE Trans. Magn., vol, 25.\" not \"vol. MAG-25.\"\n\nTa or more. Papers that have not been published, even if they have been submitted for publication, should be cited as \"unpublished\" [4]. Papers that have been accepted for publication should be cited as \"in press\"[5].In a paper titl,capitalize the first word and all other words except for conjunctions, prepositions less than seven letters, and prepositional phrases.\n\n\n\nFor papers published in translated journals, first give the English citation, then the original foreign-language citation [6].\n\n\n\n### C. Abbreviations and Acronyms \n\nDefine abbreviations and acronyms the first time they are used in the text, even if they have been defined in the abstract.Abbreviations such as IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use abbreviations in the title unless they are unavoidable.\n\n\n\n### D. Equations \n\nNumber equations consecutively with equation numbers in parentheses flush with the right margin, as in (1). To make your equations more compact, you may use the solidus (/),the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols.Use an en dash (−) rather than a hyphen for a minus sig. Use parentheses to avoid ambiguities in denominators. Punctuate equations with commas or periods when they are part of a sentence, as in \n\n\n\n$$a+b=c.$$\n\nSymbols in your equation should be defined before the equation appears or immediately following. Use \"(1),\" not \"Eq. (1)\" or \"equation (1),\" except at the beginning of a sentence: \"Equation (1) is ..77\n\n\n\n### E. Other Recommendations \n\nThe Roman numerals used to number the section headings are optional. If you do use them do not number ACKNOWLEDGMENT and REFERENCES, and begin Subheadings with letters.Use two spaces after periods (full stops).Hyphenate complex modifiers:\"zero-field-cooled magnetization.\" Avoid dangling participles, such as, \"Using (1), the potential was calculated.\"  Write instead,\"The potential was calculated using (1),\" or \"Using (1), we calculated the potential.\"\n\nUse a zero before decimal points: \"0.25,\" not \".25.\" Use \"cm3,\" not \"cc.\"  Do not mix complete spellings and abbreviations of units: \"Wb/m2\" or \"webers per square meter,,\"not \"webers/m.\" Spell units when they appear in the text:\"…a few henries,\"not\"…afew H.\"Ifyour native language is not English, try to get a native English-speaking colleague to proofread your paper. Do not add page numbers.\n\n### I II. UNITS \n\nUse either SI (MKS) or CGS as primary units. (SI units are encouraged. English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as \"3.5-inch disk drive.\"\n\nAvoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.\n\n\n\n### I V. SOME COMMON MISTAKES \n\nThe word \"data\" is plural, not singular. The subscript for the permeability of vacuum is zero, not a lower case \"o.\"In American English, periods and commas are within the quotation marks, like \"this period.\" A parenthetical statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.) A graph with a graph is an \"inset,\"not an \"insert.\" The word alternatively is preferred to the word \"alternately\"  (unless you mean something that alternates). Do not use the word \"essentially\" to mean \"approximately\" or \"effectively.\" Be aware of the different meanings of the homophones \"affect\" and \"effect,\"\"complement\" and \"compliment,\" \"discreet\" and \"discrete,\"\"principal\" and \"principle.\"  Do not confuse \"imply\" and \"infer.\" The prefix \"non\" is not a word; it should be joined to the word it modifies, usually without a hyphen. There is no period after the \"et\" in the Latin abbreviation \"et al.\" The abbreviation \"i.e.\" means \"that is,,\" and the abbreviation \"e.g.\"3means \"for example.\" An excellent style manual for science writers is [7].\n\n\n\n## ACKNOWLEDGMENT \n\nThe preferred spelling of the word \"acknowledgment\"in America is without an $ ``\\mathbf{e}''$ after the \"g.\"Try to avoid the stilted expression, \"One of us (R.B.G.) thanks .….\" Instead,try \"R.B.G. thanks ….\" Put sponsor acknowledgments in the unnumbered footnotes on the first page.\n\n\n\n## REFERENCES \n\n[1] G. Eason, B. Noble, and IN. Snedon,\"On certain inealso Lipschitz-Hankel type involving products of Bessel functions,  Phil.Trans. Roy. Soc.London,vol.A247, pp.529-551,April 1955.[2]J.Clerk Maxwell,A Treatise on Electricity and Magnetism,3 ed, vol.2. Oxford: Clarendon, 1892, pp.68-73.\n[3]IS. Jacobs and C.P. Bean, \"Fine particles,thin films and exchange anisotropy,\"in Magnetism, vol. II, G.T. Rado and H. Suhl, Ed. New York: Academic, 1963, pp.271-350.\n[4]K.Elissa, \"Title of paper if known,\"unpublished.\n[5]R. Nicole,\"Titleof paper with only first word capitalized,\" J. Name Stand. Abbrev., in press.\n[6]Y.Yorozu, M. Hirano, K.Oka, and Y.Tagawa, \"Electron spectroscopy studies on magneto-optical media and plastic substrate interface.\" IEEE Transl.J. Magn. Japan,vol. 2, pp.740-741,August 1987 [Digests 9h Annual Conf. Magnetics Japan, p.301, 1982].\n[7]M. Young, The Technical Writer's Handbook. Mill Valley,CA:\nUniversity Science, 1989.\n\n\n---\n\n"
+}

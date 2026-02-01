@@ -1,0 +1,311 @@
+.tourOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.tooltip {
+    position: fixed;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 320px;
+    min-width: 280px;
+    z-index: 10002;
+    pointer-events: auto;
+    animation: tooltipFadeIn 0.3s ease-out;
+    border: 2px solid #3b82f6;
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.tooltipHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.tooltipTitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.closeButton {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    line-height: 1;
+}
+
+.closeButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.tooltipContent {
+    padding: 20px;
+}
+
+.tooltipContent p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+.tooltipFooter {
+    padding: 16px 20px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+    border-radius: 0 0 10px 10px;
+}
+
+.stepCounter {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.tourControls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.skipButton {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: color 0.2s;
+}
+
+.skipButton:hover {
+    color: #374151;
+    background: #e5e7eb;
+}
+
+.prevButton {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.prevButton:hover {
+    background: #e5e7eb;
+    border-color: #9ca3af;
+}
+
+.nextButton {
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+    font-weight: 500;
+}
+
+.nextButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Tooltip positioning arrows */
+.tooltip::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Arrow pointing up (tooltip is below target) */
+.tooltip[data-position="bottom"]::before {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #3b82f6;
+}
+
+/* Arrow pointing down (tooltip is above target) */
+.tooltip[data-position="top"]::before {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f9fafb;
+}
+
+/* Arrow pointing right (tooltip is to the left of target) */
+.tooltip[data-position="left"]::before {
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #3b82f6;
+}
+
+/* Arrow pointing left (tooltip is to the right of target) */
+.tooltip[data-position="right"]::before {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #3b82f6;
+}
+
+/* Center positioned tooltip (no arrow) */
+.tooltip[data-position="center"] {
+    border: 3px solid #3b82f6;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+    .tooltip {
+        max-width: 280px;
+        min-width: 250px;
+        margin: 0 10px;
+    }
+    
+    .tooltipHeader {
+        padding: 12px 16px 8px;
+    }
+    
+    .tooltipTitle {
+        font-size: 14px;
+    }
+    
+    .tooltipContent {
+        padding: 16px;
+    }
+    
+    .tooltipContent p {
+        font-size: 13px;
+    }
+    
+    .tooltipFooter {
+        padding: 12px 16px;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .tourControls {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .stepCounter {
+        text-align: center;
+    }
+}
+
+/* Highlight effect for tour targets - handled in JavaScript */
+
+/* Custom pulse animation for highlighted elements */
+@keyframes tourPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+/* Special styling for tour welcome message */
+.tooltip[data-position="center"] .tooltipHeader {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.tooltip[data-position="center"] .tooltipContent {
+    text-align: center;
+    padding: 24px;
+}
+
+.tooltip[data-position="center"] .tooltipContent p {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+/* Tour start button styling */
+.startTourButton {
+    background: linear-gradient(135deg, #ad5fff 0%, #471eec 100%);
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.startTourButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Loading state */
+.tooltipLoading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.tooltipLoading .tourControls button {
+    opacity: 0.5;
+    cursor: not-allowed;
+} 

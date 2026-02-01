@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "source": "PPStructureV3",
+    "total_length": 3770,
+    "line_count": 65
+  },
+  "content": {
+    "AUTHOR'S GUIDE": "",
+    "Preparation of Papers in Two-Column Format  for the VLSI Symposia on Technology and Circuits": "Center the Authors Names Here \nCenter the Affiliations Here \nCenter the City, States and Country Here \n(it is your option if you want your entire address and e-mail address listed)",
+    "Abstract": "The abstract is  brief(5-0 words)sopis ofyour 2 or 4(CircuitsOnl-pagepapr.tsuseito providequick outlineofourtioivgthanvvwf the research.Thisianimportataspct ofyour papra itis this description that may atract the reader to continue and finish your full report.",
+    "Introduction": "These instructions give you basic guidelines for preparing camera-ready (CR) papers for the VLSI Symposia. The instructions assume that you have computer desktop publishing equipment with several fonts.\nYour goal isto simulate,asclosely as possible,the usual appearance of published papers intheVLSI Symposia Digess.These instructions have been prepared in the preferred format.",
+    "How to Format the Page": "",
+    "A. Full-Size Camera-Ready (CR) Copy": "Prepare Camera-Ready paper in full size format, on Asize or8 1/2\"x11\" (21.5 cm x 27.9 cm) paper.",
+    "B.Fonts": "The best results will be obtained if your computer wordprocessor has several font sizes. Try to follow the font sizes specified in Table I, as best you can. As an aid to gauging font size,1 point is about 0.35 mm. Use a proportional, serif font such as Times or Dutch Roman.",
+    "C. Formats": "In formatting your A4-size paper, set top margin to 20 mm (0.8inches), bottom margin to 25 mm (1 inch), left margin to 14 mm (0.56 inches) and right margin to 15 mm (0.6 inches.If you are using paper {$3\\;1/2\\;x\\;11$ ,set the top margin to 10mm (0.4 inches), bottom margin to 19 mm (0.76 inches) and left and right margins to 17 mm (0.68\n<div style=\"text-align: center;\">TABLEI FONT SIZES FOR CAMERA-READY PAPERS </div>\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>Font Size</td><td>Bold</td><td>Italic Text</td><td></td></tr><tr><td>10 10</td><td>Yes</td><td></td><td>Main text, authors' affiliations Headings, i.e. Abstract</td></tr><tr><td>12</td><td></td><td></td><td>Authors' names</td></tr><tr><td>14</td><td>Yes</td><td></td><td>Paper title</td></tr><tr><td>10</td><td></td><td>Yes</td><td>Sub-headings,i.e., Fonts</td></tr><tr><td>9</td><td></td><td></td><td>References, table, table names, table captions, figure captions</td></tr><tr><td>8</td><td></td><td></td><td>Footnotes, sub- and superscripts</td></tr></table></body></html></div>\ninches). The column width is 88 mm (3.46 inches) with 5mm (0.2 inches) space between the two columns.\nYou should left- and right-justify your columns. On the last page of your paper, try to adjust the lengths of the two columns so that they are the same. Use automatic hyphenation,if you have it. Don't forget to check spelling.\nNumber each of your submitted pages at the top, right corner, in non-photographic light blue pencil.",
+    "Illustrations": "Position figures and tables at the tops and bottoms of columns, if possible. Large figures and tables may span both columns.Figure captions should be below the figures; table captions should be above the tables. Try to place the figures and tables after their first mention in the text. Use the abbreviation (e.g., \"Fig. 1\") even at the beginning of a sentence.\nAll half-tone illustrations (pictures/photographs) should be clear black and white prints. Do not use photocopies.These illustrations should be furnished within the copy, or if necessary, as separate 8\"x 10\" prints, in which case a blank space of proper proportions must be allowed within the copy.Make certain to include a caption in the paper for the illustration as well as to label the illustration on the back."
+  },
+  "structured_elements": {
+    "tables": [
+      {
+        "type": "table",
+        "html": "<div style=\"text-align: center;\">TABLEI FONT SIZES FOR CAMERA-READY PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>Font Size</td><td>Bold</td><td>Italic Text</td><td></td></tr><tr><td>10 10</td><td>Yes</td><td></td><td>Main text, authors' affiliations Headings, i.e. Abstract</td></tr><tr><td>12</td><td></td><td></td><td>Authors' names</td></tr><tr><td>14</td><td>Yes</td><td></td><td>Paper title</td></tr><tr><td>10</td><td></td><td>Yes</td><td>Sub-headings,i.e., Fonts</td></tr><tr><td>9</td><td></td><td></td><td>References, table, table names, table captions, figure captions</td></tr><tr><td>8</td><td></td><td></td><td>Footnotes, sub- and superscripts</td></tr></table></body></html></div>",
+        "rows": [
+          [
+            "Font Size",
+            "Bold",
+            "Italic Text",
+            ""
+          ],
+          [
+            "10 10",
+            "Yes",
+            "",
+            "Main text, authors' affiliations Headings, i.e. Abstract"
+          ],
+          [
+            "12",
+            "",
+            "",
+            "Authors' names"
+          ],
+          [
+            "14",
+            "Yes",
+            "",
+            "Paper title"
+          ],
+          [
+            "10",
+            "",
+            "Yes",
+            "Sub-headings,i.e., Fonts"
+          ],
+          [
+            "9",
+            "",
+            "",
+            "References, table, table names, table captions, figure captions"
+          ],
+          [
+            "8",
+            "",
+            "",
+            "Footnotes, sub- and superscripts"
+          ]
+        ],
+        "row_count": 7,
+        "column_count": 4
+      }
+    ],
+    "images": [],
+    "equations": [
+      {
+        "type": "equation",
+        "latex": "3\\;1/2\\;x\\;11",
+        "full_match": "$3\\;1/2\\;x\\;11$"
+      }
+    ],
+    "sections": [
+      {
+        "type": "section",
+        "level": 1,
+        "title": "AUTHOR'S GUIDE",
+        "content": ""
+      },
+      {
+        "type": "section",
+        "level": 1,
+        "title": "Preparation of Papers in Two-Column Format  for the VLSI Symposia on Technology and Circuits",
+        "content": "Center the Authors Names Here \n\nCenter the Affiliations Here \n\nCenter the City, States and Country Here \n\n(it is your option if you want your entire address and e-mail address listed)"
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Abstract",
+        "content": "The abstract is  brief(5-0 words)sopis ofyour 2 or 4(CircuitsOnl-pagepapr.tsuseito providequick outlineofourtioivgthanvvwf the research.Thisianimportataspct ofyour papra itis this description that may atract the reader to continue and finish your full report."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Introduction",
+        "content": "These instructions give you basic guidelines for preparing camera-ready (CR) papers for the VLSI Symposia. The instructions assume that you have computer desktop publishing equipment with several fonts.\n\n\n\nYour goal isto simulate,asclosely as possible,the usual appearance of published papers intheVLSI Symposia Digess.These instructions have been prepared in the preferred format."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "How to Format the Page",
+        "content": ""
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "A. Full-Size Camera-Ready (CR) Copy",
+        "content": "Prepare Camera-Ready paper in full size format, on Asize or8 1/2\"x11\" (21.5 cm x 27.9 cm) paper."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "B.Fonts",
+        "content": "The best results will be obtained if your computer wordprocessor has several font sizes. Try to follow the font sizes specified in Table I, as best you can. As an aid to gauging font size,1 point is about 0.35 mm. Use a proportional, serif font such as Times or Dutch Roman."
+      },
+      {
+        "type": "section",
+        "level": 3,
+        "title": "C. Formats",
+        "content": "In formatting your A4-size paper, set top margin to 20 mm (0.8inches), bottom margin to 25 mm (1 inch), left margin to 14 mm (0.56 inches) and right margin to 15 mm (0.6 inches.If you are using paper {$3\\;1/2\\;x\\;11$ ,set the top margin to 10mm (0.4 inches), bottom margin to 19 mm (0.76 inches) and left and right margins to 17 mm (0.68\n\n<div style=\"text-align: center;\">TABLEI FONT SIZES FOR CAMERA-READY PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>Font Size</td><td>Bold</td><td>Italic Text</td><td></td></tr><tr><td>10 10</td><td>Yes</td><td></td><td>Main text, authors' affiliations Headings, i.e. Abstract</td></tr><tr><td>12</td><td></td><td></td><td>Authors' names</td></tr><tr><td>14</td><td>Yes</td><td></td><td>Paper title</td></tr><tr><td>10</td><td></td><td>Yes</td><td>Sub-headings,i.e., Fonts</td></tr><tr><td>9</td><td></td><td></td><td>References, table, table names, table captions, figure captions</td></tr><tr><td>8</td><td></td><td></td><td>Footnotes, sub- and superscripts</td></tr></table></body></html></div>\n\n\ninches). The column width is 88 mm (3.46 inches) with 5mm (0.2 inches) space between the two columns.\n\nYou should left- and right-justify your columns. On the last page of your paper, try to adjust the lengths of the two columns so that they are the same. Use automatic hyphenation,if you have it. Don't forget to check spelling.\n\nNumber each of your submitted pages at the top, right corner, in non-photographic light blue pencil."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Illustrations",
+        "content": "Position figures and tables at the tops and bottoms of columns, if possible. Large figures and tables may span both columns.Figure captions should be below the figures; table captions should be above the tables. Try to place the figures and tables after their first mention in the text. Use the abbreviation (e.g., \"Fig. 1\") even at the beginning of a sentence.\n\n\n\nAll half-tone illustrations (pictures/photographs) should be clear black and white prints. Do not use photocopies.These illustrations should be furnished within the copy, or if necessary, as separate 8\"x 10\" prints, in which case a blank space of proper proportions must be allowed within the copy.Make certain to include a caption in the paper for the illustration as well as to label the illustration on the back."
+      }
+    ],
+    "table_count": 1,
+    "image_count": 0,
+    "equation_count": 1,
+    "section_count": 9
+  },
+  "raw_markdown": "# AUTHOR'S GUIDE \n\n# Preparation of Papers in Two-Column Format  for the VLSI Symposia on Technology and Circuits \n\nCenter the Authors Names Here \n\nCenter the Affiliations Here \n\nCenter the City, States and Country Here \n\n(it is your option if you want your entire address and e-mail address listed)\n\n\n\n## Abstract \n\nThe abstract is  brief(5-0 words)sopis ofyour 2 or 4(CircuitsOnl-pagepapr.tsuseito providequick outlineofourtioivgthanvvwf the research.Thisianimportataspct ofyour papra itis this description that may atract the reader to continue and finish your full report.\n\n\n## Introduction \n\nThese instructions give you basic guidelines for preparing camera-ready (CR) papers for the VLSI Symposia. The instructions assume that you have computer desktop publishing equipment with several fonts.\n\n\n\nYour goal isto simulate,asclosely as possible,the usual appearance of published papers intheVLSI Symposia Digess.These instructions have been prepared in the preferred format.\n\n## How to Format the Page \n\n### A. Full-Size Camera-Ready (CR) Copy \n\nPrepare Camera-Ready paper in full size format, on Asize or8 1/2\"x11\" (21.5 cm x 27.9 cm) paper.\n\n\n\n### B.Fonts \n\nThe best results will be obtained if your computer wordprocessor has several font sizes. Try to follow the font sizes specified in Table I, as best you can. As an aid to gauging font size,1 point is about 0.35 mm. Use a proportional, serif font such as Times or Dutch Roman.\n\n\n\n### C. Formats \n\nIn formatting your A4-size paper, set top margin to 20 mm (0.8inches), bottom margin to 25 mm (1 inch), left margin to 14 mm (0.56 inches) and right margin to 15 mm (0.6 inches.If you are using paper {$3\\;1/2\\;x\\;11$ ,set the top margin to 10mm (0.4 inches), bottom margin to 19 mm (0.76 inches) and left and right margins to 17 mm (0.68\n\n<div style=\"text-align: center;\">TABLEI FONT SIZES FOR CAMERA-READY PAPERS </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>Font Size</td><td>Bold</td><td>Italic Text</td><td></td></tr><tr><td>10 10</td><td>Yes</td><td></td><td>Main text, authors' affiliations Headings, i.e. Abstract</td></tr><tr><td>12</td><td></td><td></td><td>Authors' names</td></tr><tr><td>14</td><td>Yes</td><td></td><td>Paper title</td></tr><tr><td>10</td><td></td><td>Yes</td><td>Sub-headings,i.e., Fonts</td></tr><tr><td>9</td><td></td><td></td><td>References, table, table names, table captions, figure captions</td></tr><tr><td>8</td><td></td><td></td><td>Footnotes, sub- and superscripts</td></tr></table></body></html></div>\n\n\ninches). The column width is 88 mm (3.46 inches) with 5mm (0.2 inches) space between the two columns.\n\nYou should left- and right-justify your columns. On the last page of your paper, try to adjust the lengths of the two columns so that they are the same. Use automatic hyphenation,if you have it. Don't forget to check spelling.\n\nNumber each of your submitted pages at the top, right corner, in non-photographic light blue pencil.\n\n## Illustrations \n\nPosition figures and tables at the tops and bottoms of columns, if possible. Large figures and tables may span both columns.Figure captions should be below the figures; table captions should be above the tables. Try to place the figures and tables after their first mention in the text. Use the abbreviation (e.g., \"Fig. 1\") even at the beginning of a sentence.\n\n\n\nAll half-tone illustrations (pictures/photographs) should be clear black and white prints. Do not use photocopies.These illustrations should be furnished within the copy, or if necessary, as separate 8\"x 10\" prints, in which case a blank space of proper proportions must be allowed within the copy.Make certain to include a caption in the paper for the illustration as well as to label the illustration on the back."
+}

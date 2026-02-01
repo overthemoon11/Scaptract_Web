@@ -1,0 +1,1363 @@
+.fullScreenLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.documentsContainer {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  margin-top: 82px;
+}
+
+.notificationsContainer {
+  flex: 1;
+  background: #101010;
+  padding: 68px;
+  margin-top: 82px;
+  min-height: calc(100vh - 82px);
+}
+
+.notificationsContent {
+  background: white;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
+.mainTitle {
+  font-size: 40px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.mainDescription {
+  font-size: 16px;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.documentViewer {
+  display: flex;
+  gap: 20px;
+  min-height: calc(100vh - 200px);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.documentContent {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.documentHeader {
+  background: white;
+  color: black;
+  padding: 20px 30px 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+
+.documentTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  width: fit-content;
+  line-height: 1.2;
+  flex: 1;
+}
+
+.backButton {
+  border: none;
+  background: none;
+  color: black;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.backButton:hover {
+  opacity: 0.7;
+}
+
+.backButton svg {
+  display: block;
+  margin-top: 2px;
+}
+
+.viewOriginalButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  height: 48px;
+}
+
+.viewOriginalButton:hover {
+  background: #101010;
+  box-shadow: 0 0 2px 0 #fff, 0 0 10px 0 #ad5fff, 0 0 15px 0 #471eec;
+}
+
+.viewOriginalButton svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.backButton svg {
+  display: block;
+}
+
+.documentControls {
+  display: flex;
+  gap: 0;
+  margin-top: 20px;
+  background: transparent;
+}
+
+.controlButton {
+  background: #e9ecef;
+  color: #495057;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+  width: 200px;
+  height: 50px;
+}
+
+.controlButton.active {
+  background: #2c2c2e;
+  color: #fff;
+}
+
+.controlButton:hover:not(.active) {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.documentBody {
+  padding: 50px 70px;
+  height: 80vh;
+  overflow: auto;
+  background: #d9d9d9;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.originalFileViewer {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdfViewerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.pdfCanvas {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.imageViewerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.imageViewer {
+  max-width: 100%;
+  max-height: 70vh;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.fileFrame {
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+}
+
+.documentText {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pagesContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.textPage {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+  height: 100%;
+  overflow: auto;
+  flex: 1 1 50%;
+  min-width: 0;
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.singleTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.singleTextPage {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: left;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  line-height: 1.8;
+}
+
+.emptyPage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-style: italic;
+}
+
+.readOnlyText {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.editableTextContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.editableTextHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 8px 8px 0 0;
+  margin: -30px -30px 0 -30px;
+}
+
+.editableTextLabel {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.saveTextButton {
+  background: #495057;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.saveTextButton:hover:not(:disabled) {
+  background: #343a40;
+}
+
+.saveTextButton:disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+.editableTextarea {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  /* border: 1px solid #e9ecef; */
+  border-radius: 0 0 8px 8px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  resize: none;
+  outline: none;
+  background: white;
+  /* margin: 0 -30px -30px -30px; */
+  min-height: 400px;
+  font-family: "Poppins", sans-serif;
+}
+
+.editableTextarea:focus {
+  /* border-color: #495057; */
+  /* box-shadow: 0 0 0 2px rgba(73, 80, 87, 0.1); */
+}
+
+.pageIndicator {
+  margin-top: 20px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.noContent {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 40px 20px;
+}
+
+.documentData {
+  font-size: 14px;
+  color: #333;
+}
+
+.structuredDataContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1em;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.dataLabel {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 5px;
+}
+
+.dataValue {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.topicsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topicsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.topicCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.topicTitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 5px;
+}
+
+.topicSummary {
+  color: #495057;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.documentPagination {
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ellipsis {
+  padding: 0 8px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.paginationButton {
+  background: transparent;
+  color: #6c757d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.paginationButton:disabled {
+  background: transparent;
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  background: transparent;
+  color: #6c757d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 40px;
+  transition: all 0.3s ease;
+}
+
+.pageNumber:hover {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.pageNumber.current {
+  background: #495057;
+  color: white;
+}
+
+/* Document Metadata */
+.documentMetadata {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.metadataTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 15px 0;
+}
+
+.metadataGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.metadataItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.metadataLabel {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.metadataValue {
+  color: #333;
+  font-size: 14px;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.statusCompleted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.statusFailed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.statusProcessing {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* Search and Navigation */
+.searchSection {
+  padding: 10px 0px;
+  background: white;
+}
+
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background: #f5f5f5;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 15px;
+  font-size: 16px;
+  color: #6c757d;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchIcon svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* Comments Sidebar */
+.commentsSidebar {
+  width: 350px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 200px);
+  margin-top: 71px;
+}
+
+.commentsHeader {
+  background: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 8px 8px 0 0;
+}
+
+.commentsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.addCommentSection {
+  padding: 20px;
+}
+
+.addCommentTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 15px 0;
+}
+
+.commentInput {
+  width: 100%;
+  min-height: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  background: #f2f2f2;
+}
+
+.commentInput:focus {
+  outline: none;
+}
+
+.submitCommentButton {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.submitCommentButton:hover:not(:disabled) {
+  box-shadow: 0 0 25px rgba(248, 209, 227, 0.8),
+    0 0 50px rgba(248, 209, 227, 0.4), 0 0 75px rgba(248, 209, 227, 0.2);
+  transform: translateY(-1px);
+}
+
+.submitCommentButton:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.commentsHistory {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.commentsHistoryTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 15px 0;
+}
+
+.commentCard {
+  background: #f2f2f2;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.commentCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.commentHeader {
+  margin-bottom: 10px;
+}
+
+.commentMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.commentDate {
+  font-size: 11px;
+  color: #adb5bd;
+}
+
+.commentText {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.loadingComments,
+.noComments {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.replySection {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e9ecef;
+}
+
+.replyText {
+  font-size: 13px;
+  color: #495057;
+  font-style: italic;
+}
+
+.noReply {
+  font-size: 13px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .documentViewer {
+    flex-direction: column;
+  }
+
+  .commentsSidebar {
+    width: 100%;
+    max-height: 400px;
+  }
+
+  /* Image Carousel Styles */
+  .carouselOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+  }
+
+  .carouselContainer {
+    background: white;
+    border-radius: 12px;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carouselCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+
+  .carouselCloseButton:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .carouselHeader {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+  }
+
+  .carouselHeader h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .carouselHeader p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .carouselContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex: 1;
+    min-height: 400px;
+  }
+
+  .carouselNavButton {
+    background: #471eec;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+    min-width: 100px;
+  }
+
+  .carouselNavButton:hover:not(:disabled) {
+    background: #3a1ac7;
+  }
+
+  .carouselNavButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
+  .carouselImageContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+    max-height: 70vh;
+    overflow: hidden;
+  }
+
+  .carouselImage {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .carouselThumbnails {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    overflow-x: auto;
+    justify-content: center;
+    background: #f5f5f5;
+  }
+
+  .carouselThumbnail {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    background: white;
+    padding: 4px;
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carouselThumbnail:hover {
+    transform: scale(1.05);
+  }
+
+  .carouselThumbnail.active {
+    border-color: #471eec;
+  }
+
+  .thumbnailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  /* Inline Image Carousel Section (always visible when multiple images) */
+  .imageCarouselSection {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imageCarouselHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .imageCarouselTitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .viewAllImagesButton {
+    background: #471eec;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .viewAllImagesButton:hover {
+    background: #3a1ac7;
+  }
+
+  .imageCarouselMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .imageCarouselNavButton {
+    background: white;
+    border: 2px solid #471eec;
+    color: #471eec;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .imageCarouselNavButton:hover:not(:disabled) {
+    background: #471eec;
+    color: white;
+  }
+
+  .imageCarouselNavButton:disabled {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .imageCarouselImageWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    min-height: 300px;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .imageCarouselMainImage {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .imageCarouselMainImage:hover {
+    transform: scale(1.02);
+  }
+
+  .imageCarouselImageInfo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .imageCarouselThumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .imageCarouselThumbnail {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: white;
+    padding: 3px;
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .imageCarouselThumbnail:hover {
+    transform: scale(1.05);
+    border-color: #471eec;
+  }
+
+  .imageCarouselThumbnailActive {
+    border-color: #471eec;
+    box-shadow: 0 0 0 2px rgba(71, 30, 236, 0.2);
+  }
+
+  .imageCarouselThumbnailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .documentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .documentTitle {
+    font-size: 20px;
+  }
+
+  .documentControls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .metadataGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Original Images Carousel Popup - Benefits Style */
+.originalCarouselOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.originalCarouselContainer {
+  background: #101010;
+  border-radius: 50px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.originalCarouselCloseButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.originalCarouselCloseButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.originalCarouselHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.originalCarouselTitle {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.originalCarouselSubtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.originalCarouselWrapper {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  background: black;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.originalCarouselTrack {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+}
+
+.originalCarouselCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  padding: 20px;
+  min-width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.originalCarouselImageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.originalCarouselImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.originalCarouselImageName {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+  word-break: break-word;
+  padding: 0 20px;
+}
+
+.originalCarouselDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.originalCarouselDot,
+.originalCarouselDotActive {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.originalCarouselDotActive {
+  width: 24px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.originalCarouselNavButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.originalCarouselNavButton {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.originalCarouselNavButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.originalCarouselSideButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  user-select: none;
+}
+
+.originalCarouselSideButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.originalCarouselSideButton:active {
+  transform: translateY(-50%) scale(0.95);
+}

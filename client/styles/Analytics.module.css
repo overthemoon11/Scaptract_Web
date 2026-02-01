@@ -1,0 +1,238 @@
+/* Custom color scheme */
+:root {
+  --chart-1: #201649;
+  --chart-2: #4f5e8a;
+  --chart-3: #6779a5;
+  --chart-4: #90a9ba;
+  --chart-5: #b4cbd0;
+  --chart-6: #f0f5f6;
+}
+
+.container {
+  min-height: 100vh;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: black;
+  margin: 0;
+}
+
+.timeRangeSelect {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.timeRangeSelect:hover {
+  border-color: none;
+}
+
+.timeRangeSelect:focus {
+  border-color: none;
+  box-shadow: 0 0 0 3px rgba(161, 161, 161, 0.1);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: #f0f5f6;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.statCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.statLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.chartCardFullWidth {
+  grid-column: span 2;
+}
+
+.chartCard {
+  background: #f0f5f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.chartCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.chartHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 24px 0 24px;
+}
+
+.chartTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.chartDescription {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.chartContent {
+  padding: 24px;
+  padding-top: 16px;
+}
+
+.chartFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 24px 24px 24px;
+  font-size: 14px;
+}
+
+.chartHeader .chartTitle {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.error {
+  padding: 20px;
+  background: #fee;
+  border: 2px solid #d60a47;
+  border-radius: 8px;
+  color: #d60a47;
+  text-align: center;
+  font-weight: 500;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+}
+
+.datePickerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dateLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.dateInput {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: black;
+  background: white;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.dateInput:hover {
+  border-color: none;
+}
+
+.dateInput:focus {
+  border-color: none;
+  box-shadow: 0 0 0 3px rgba(161, 161, 161, 0.1);
+}
+
+.noDataMessage {
+  padding: 40px;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .chartsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

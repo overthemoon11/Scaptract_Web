@@ -1,0 +1,198 @@
+.warningOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.warningModal {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-out;
+}
+
+.warningIcon {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+}
+
+.warningTitle {
+    color: #dc3545;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.warningMessage {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+
+.warningActions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.buttonPrimary {
+    background: #007bff;
+    color: white;
+}
+
+.buttonPrimary:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+.buttonSecondary {
+    background: #6c757d;
+    color: white;
+}
+
+.buttonSecondary:hover {
+    background: #545b62;
+    transform: translateY(-1px);
+}
+
+.statusBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #007bff;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.statusBar.warning {
+    background: #dc3545;
+    animation: pulseWarning 2s infinite;
+}
+
+.statusContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.statusText {
+    font-weight: 500;
+}
+
+.extendButton {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.extendButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulseWarning {
+    0%, 100% {
+        background: #dc3545;
+    }
+    50% {
+        background: #c82333;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .warningModal {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .warningTitle {
+        font-size: 20px;
+    }
+
+    .warningActions {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .statusContent {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .statusBar {
+        padding: 12px 15px;
+    }
+} 

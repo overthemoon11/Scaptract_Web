@@ -1,0 +1,48 @@
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+}
+
+.button {
+  padding: 12px;
+  border-radius: 8px;
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #444;
+}
+
+.error {
+  color: red;
+  margin: 0 0 8px 0;
+  text-align: center;
+}

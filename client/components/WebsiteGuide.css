@@ -1,0 +1,7 @@
+.tg-backdrop {
+    z-index: 1001;
+}
+
+.custom-tour-dialog {
+    max-width: 355px !important;
+}

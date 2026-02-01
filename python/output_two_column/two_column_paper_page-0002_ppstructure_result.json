@@ -1,0 +1,1229 @@
+[
+  {
+    "input_path": "two_column_paper\\two_column_paper_page-0002.jpg",
+    "page_index": null,
+    "page_count": null,
+    "width": 1240,
+    "height": 1755,
+    "doc_preprocessor_res": {
+      "input_path": null,
+      "page_index": null,
+      "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]",
+      "model_settings": {
+        "use_doc_orientation_classify": true,
+        "use_doc_unwarping": true
+      },
+      "angle": 0,
+      "rot_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]",
+      "output_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]"
+    },
+    "layout_det_res": {
+      "input_path": null,
+      "page_index": null,
+      "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]",
+      "boxes": [
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9846668243408203,
+          "coordinate": [
+            "51.07663",
+            "1371.0166",
+            "588.2615",
+            "1604.0298"
+          ]
+        },
+        {
+          "cls_id": 9,
+          "label": "reference",
+          "score": 0.9832959175109863,
+          "coordinate": [
+            "632.00244",
+            "881.1318",
+            "1183.76",
+            "1334.6392"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9811202883720398,
+          "coordinate": [
+            "47.928864",
+            "785.5043",
+            "592.1432",
+            "967.296"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9776835441589355,
+          "coordinate": [
+            "46.823425",
+            "543.68994",
+            "594.93695",
+            "702.1743"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9718015789985657,
+          "coordinate": [
+            "52.00592",
+            "1156.8395",
+            "592.4726",
+            "1259.6576"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9706897139549255,
+          "coordinate": [
+            "629.3179",
+            "481.92093",
+            "1174.7559",
+            "583.9126"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9671655297279358,
+          "coordinate": [
+            "629.59875",
+            "247.93953",
+            "1174.1311",
+            "377.1878"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9590412378311157,
+          "coordinate": [
+            "49.93988",
+            "972.4282",
+            "590.51843",
+            "1047.6312"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9524532556533813,
+          "coordinate": [
+            "47.396423",
+            "706.32935",
+            "606.1069",
+            "780.3435"
+          ]
+        },
+        {
+          "cls_id": 7,
+          "label": "formula",
+          "score": 0.9524450898170471,
+          "coordinate": [
+            "633.3827",
+            "88.26835",
+            "1108.4523",
+            "213.9761"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.9428287148475647,
+          "coordinate": [
+            "630.57544",
+            "696.38135",
+            "1177.5569",
+            "747.1089"
+          ]
+        },
+        {
+          "cls_id": 19,
+          "label": "reference_content",
+          "score": 0.9381539821624756,
+          "coordinate": [
+            "633.6671",
+            "882.68787",
+            "1180.4138",
+            "977.7948"
+          ]
+        },
+        {
+          "cls_id": 1,
+          "label": "image",
+          "score": 0.9365847706794739,
+          "coordinate": [
+            "168.948",
+            "97.94283",
+            "464.22046",
+            "306.5096"
+          ]
+        },
+        {
+          "cls_id": 19,
+          "label": "reference_content",
+          "score": 0.9321458339691162,
+          "coordinate": [
+            "634.4143",
+            "1033.5405",
+            "1181.3297",
+            "1128.8906"
+          ]
+        },
+        {
+          "cls_id": 19,
+          "label": "reference_content",
+          "score": 0.9290119409561157,
+          "coordinate": [
+            "634.1963",
+            "1213.8535",
+            "1184.4329",
+            "1333.6504"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.9128086566925049,
+          "coordinate": [
+            "54.968353",
+            "1316.3293",
+            "175.44086",
+            "1337.4939"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.911916196346283,
+          "coordinate": [
+            "46.63723",
+            "490.32874",
+            "176.77753",
+            "510.7683"
+          ]
+        },
+        {
+          "cls_id": 19,
+          "label": "reference_content",
+          "score": 0.9099976420402527,
+          "coordinate": [
+            "634.4811",
+            "982.45776",
+            "1180.3744",
+            "1029.4905"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.9089304804801941,
+          "coordinate": [
+            "771.0237",
+            "644.80396",
+            "1033.6597",
+            "665.2612"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.9084293246269226,
+          "coordinate": [
+            "52.3266",
+            "1102.8779",
+            "330.38965",
+            "1123.3896"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.9055869579315186,
+          "coordinate": [
+            "257.18375",
+            "442.433",
+            "389.9056",
+            "464.32907"
+          ]
+        },
+        {
+          "cls_id": 19,
+          "label": "reference_content",
+          "score": 0.9023274183273315,
+          "coordinate": [
+            "634.4115",
+            "1162.0762",
+            "1183.6622",
+            "1208.7502"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.8964161276817322,
+          "coordinate": [
+            "629.9343",
+            "431.38507",
+            "873.89575",
+            "450.6989"
+          ]
+        },
+        {
+          "cls_id": 6,
+          "label": "figure_title",
+          "score": 0.8904109597206116,
+          "coordinate": [
+            "47.11075",
+            "353.94022",
+            "589.3008",
+            "399.03928"
+          ]
+        },
+        {
+          "cls_id": 2,
+          "label": "text",
+          "score": 0.8737174272537231,
+          "coordinate": [
+            "714.3733",
+            "776.24",
+            "1062.3712",
+            "800.00073"
+          ]
+        },
+        {
+          "cls_id": 17,
+          "label": "formula_number",
+          "score": 0.8646240234375,
+          "coordinate": [
+            "1139.2428",
+            "174.17352",
+            "1161.4186",
+            "196.88004"
+          ]
+        },
+        {
+          "cls_id": 19,
+          "label": "reference_content",
+          "score": 0.840776801109314,
+          "coordinate": [
+            "634.3358",
+            "1134.9987",
+            "1121.3314",
+            "1159.0043"
+          ]
+        },
+        {
+          "cls_id": 0,
+          "label": "paragraph_title",
+          "score": 0.8198939561843872,
+          "coordinate": [
+            "851.2298",
+            "829.40076",
+            "954.4659",
+            "853.6749"
+          ]
+        },
+        {
+          "cls_id": 7,
+          "label": "formula",
+          "score": 0.321781724691391,
+          "coordinate": [
+            "1133.1361",
+            "298.03705",
+            "1170.2115",
+            "322.06573"
+          ]
+        },
+        {
+          "cls_id": 7,
+          "label": "formula",
+          "score": 0.3045482337474823,
+          "coordinate": [
+            "793.67773",
+            "329.24295",
+            "830.2627",
+            "353.54483"
+          ]
+        },
+        {
+          "cls_id": 7,
+          "label": "formula",
+          "score": 0.3004181981086731,
+          "coordinate": [
+            "635.37317",
+            "330.7243",
+            "671.30725",
+            "353.87054"
+          ]
+        }
+      ]
+    },
+    "region_det_res": {
+      "input_path": null,
+      "page_index": null,
+      "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]",
+      "boxes": [
+        {
+          "cls_id": 0,
+          "label": "Region",
+          "score": 0.9600104093551636,
+          "coordinate": "[  46.63723 ... 1604.0298 ]"
+        },
+        {
+          "coordinate": [
+            "1139.2428",
+            "174.17352",
+            "1161.4186",
+            "196.88004"
+          ],
+          "label": "SupplementaryRegion",
+          "score": 1
+        }
+      ]
+    },
+    "overall_ocr_res": {
+      "input_path": null,
+      "page_index": null,
+      "doc_preprocessor_res": {
+        "output_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]"
+      },
+      "dt_polys": [
+        "[[289 171]\n ...\n [288 202]]",
+        "[[1134  172]\n ...\n [1134  202]]",
+        "[[279 202]\n ...\n [279 234]]",
+        "[[290 229]\n ...\n [290 264]]",
+        "[[651 250]\n ...\n [651 278]]",
+        "[[632 278]\n ...\n [632 305]]",
+        "[[633 306]\n ...\n [633 330]]",
+        "[[674 332]\n ...\n [674 353]]",
+        "[[833 331]\n ...\n [833 352]]",
+        "[[ 47 346]\n ...\n [ 46 380]]",
+        "[[632 355]\n ...\n [632 382]]",
+        "[[ 50 374]\n ...\n [ 49 396]]",
+        "[[255 441]\n ...\n [256 469]]",
+        "[[633 432]\n ...\n [633 453]]",
+        "[[ 46 486]\n ...\n [ 45 513]]",
+        "[[652 483]\n ...\n [652 506]]",
+        "[[631 508]\n ...\n [631 534]]",
+        "[[ 69 540]\n ...\n [ 69 567]]",
+        "[[632 536]\n ...\n [632 559]]",
+        "[[ 49 568]\n ...\n [ 49 595]]",
+        "[[631 560]\n ...\n [631 590]]",
+        "[[ 51 597]\n ...\n [ 51 621]]",
+        "[[ 50 623]\n ...\n [ 50 647]]",
+        "[[ 50 651]\n ...\n [ 50 675]]",
+        "[[773 644]\n ...\n [773 668]]",
+        "[[ 52 679]\n ...\n [ 52 703]]",
+        "[[ 70 704]\n ...\n [ 70 731]]",
+        "[[654 699]\n ...\n [654 723]]",
+        "[[ 51 732]\n ...\n [ 51 755]]",
+        "[[634 727]\n ...\n [634 748]]",
+        "[[ 51 761]\n ...\n [ 51 781]]",
+        "[[ 73 786]\n ...\n [ 73 809]]",
+        "[[717 778]\n ...\n [717 801]]",
+        "[[ 52 814]\n ...\n [ 52 837]]",
+        "[[852 830]\n ...\n [852 854]]",
+        "[[ 51 841]\n ...\n [ 51 864]]",
+        "[[ 51 868]\n ...\n [ 51 891]]",
+        "[[ 49 892]\n ...\n [ 49 919]]",
+        "[[633 884]\n ...\n [633 907]]",
+        "[[671 907]\n ...\n [671 930]]",
+        "[[ 51 920]\n ...\n [ 51 944]]",
+        "[[670 931]\n ...\n [670 954]]",
+        "[[ 53 948]\n ...\n [ 53 969]]",
+        "[[671 958]\n ...\n [671 979]]",
+        "[[ 73 973]\n ...\n [ 73 996]]",
+        "[[ 634  983]\n ...\n [ 634 1006]]",
+        "[[  52  998]\n ...\n [  52 1022]]",
+        "[[ 663 1009]\n ...\n [ 663 1029]]",
+        "[[  53 1027]\n ...\n [  53 1047]]",
+        "[[ 634 1034]\n ...\n [ 634 1057]]",
+        "[[ 663 1060]\n ...\n [ 663 1081]]",
+        "[[ 662 1084]\n ...\n [ 662 1107]]",
+        "[[  53 1102]\n ...\n [  53 1123]]",
+        "[[ 661 1109]\n ...\n [ 661 1132]]",
+        "[[ 634 1136]\n ...\n [ 634 1157]]",
+        "[[  74 1155]\n ...\n [  73 1178]]",
+        "[[ 633 1161]\n ...\n [ 633 1184]]",
+        "[[  55 1183]\n ...\n [  55 1205]]",
+        "[[ 660 1191]\n ...\n [ 661 1213]]",
+        "[[  54 1208]\n ...\n [  54 1232]]",
+        "[[ 633 1211]\n ...\n [ 633 1234]]",
+        "[[  56 1236]\n ...\n [  56 1257]]",
+        "[[ 663 1237]\n ...\n [ 663 1261]]",
+        "[[ 662 1260]\n ...\n [ 662 1283]]",
+        "[[ 662 1285]\n ...\n [ 662 1308]]",
+        "[[  56 1314]\n ...\n [  55 1339]]",
+        "[[ 664 1312]\n ...\n [ 664 1333]]",
+        "[[  76 1369]\n ...\n [  75 1393]]",
+        "[[  54 1394]\n ...\n [  54 1421]]",
+        "[[  53 1421]\n ...\n [  53 1448]]",
+        "[[  54 1446]\n ...\n [  54 1473]]",
+        "[[  54 1472]\n ...\n [  54 1499]]",
+        "[[  54 1499]\n ...\n [  53 1523]]",
+        "[[  53 1524]\n ...\n [  52 1547]]",
+        "[[  53 1551]\n ...\n [  52 1575]]",
+        "[[  53 1579]\n ...\n [  52 1600]]",
+        [
+          [
+            633,
+            88
+          ],
+          [
+            1108,
+            88
+          ],
+          [
+            1108,
+            213
+          ],
+          [
+            633,
+            213
+          ]
+        ],
+        [
+          [
+            1133,
+            298
+          ],
+          [
+            1170,
+            298
+          ],
+          [
+            1170,
+            322
+          ],
+          [
+            1133,
+            322
+          ]
+        ],
+        [
+          [
+            793,
+            329
+          ],
+          [
+            830,
+            329
+          ],
+          [
+            830,
+            353
+          ],
+          [
+            793,
+            353
+          ]
+        ],
+        [
+          [
+            635,
+            330
+          ],
+          [
+            671,
+            330
+          ],
+          [
+            671,
+            353
+          ],
+          [
+            635,
+            353
+          ]
+        ]
+      ],
+      "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_textline_orientation": true
+      },
+      "text_det_params": {
+        "limit_side_len": 736,
+        "limit_type": "min",
+        "thresh": 0.3,
+        "max_side_limit": 4000,
+        "box_thresh": 0.6,
+        "unclip_ratio": 1.5
+      },
+      "text_type": "general",
+      "text_rec_score_thresh": 0.0,
+      "return_word_box": false,
+      "rec_texts": [
+        "this is",
+        "(1)",
+        "a sample",
+        "figure",
+        "Be sure that the symbols in your equation have been defined",
+        "before the equation appears or immediately following. When",
+        "you refer to equations in the text, refer to (1). Do not use",
+        "or \"Equation",
+        "except at the beginning of a sentence:",
+        "Fig.1 This is a sample figureCaptions exceeding one line are",
+        "\"Equation (1) is used….\"",
+        "arranged like this.",
+        "Helpful Hints",
+        "D. Other Recommendations",
+        "A. References",
+        "Use either one or two spaces between sections, and between",
+        "text and tables or figures, to manipulate the column length.",
+        "List and number all references at the end of the paper. When",
+        "Use two spaces after periods at the end of sentences (full",
+        "referring to them in the text, type the corresponding reference",
+        "stops).",
+        "number in square brackets as shown at the end of this",
+        "sentence[1]. Number the citations consecutively. The sentence",
+        "punctuation follows the brackets. Do not use \"Ref. [3]\" or",
+        "Summary and Conclusions",
+        "\"reference [3\" except at the beginning of a sentence.",
+        "Number footnotes separately in superscripts. Place the",
+        "This template will get you through a sample article. The",
+        "actual footnote at the bottom of the column in which it is cited.",
+        "template will be available via Web. The URL is:",
+        "Do not put footmotes in the reference list.",
+        "Give all authors' names; do not use \"et al\" unless there are",
+        "http://www.bcasj.or.jp/vlsi_sym/",
+        "six authors or more. Papers that have not been published,",
+        "References",
+        "even if they have been submitted for publication, should be",
+        "cited as \"unpublished\"[4]. Papers that have been accepted for",
+        "publication should be cited as \"in press\"[5]. Capitalize only",
+        "[1] G.Eason, B. Noble, and I. N. Sneddon, \"On certain integrals",
+        "of Lipschitz-Hankel type involving products of Bessel",
+        "the first word in paper title, except for proper nouns and",
+        "functions,\" Phil. Trans. Roy. Soc.London, vol. A27, pp.",
+        "element symbols.",
+        "529-551, April 1955.",
+        "For papers published in translated journals, please give the",
+        "[2] J. Clerk Maxwell, A Treaties on Electricity and Magnetism,",
+        "English citation first, followed by the original foreign-",
+        "3rd ed., Vol. 2, Oxford: Clarendon Press, 1892, pp. 68-73.",
+        "language citations [6]",
+        "[3] I. S. Jacobs and C. P.Bean,'Fine particles, thin films and",
+        "exchange anisotropy,\" in Magnetism, Vol. IⅢ, G. T. Rado and",
+        "H. Suhl, Eds. New York: Academic Press, 1963, pp. 271-",
+        "B.Abbreviations and Acronyms",
+        "350.",
+        "[4] M. Smith, \"Title of paper optional here,,\" unpulished",
+        "Define abbreviations and acronyms the first time they are",
+        "[5] K. Rose, \"Title of paper with only first word capitalized,,\" in",
+        "used. Acronyms such as MOSFET, ac and dc do not have to",
+        "press.",
+        "be defined. Redefine acronyms when first used in the text even",
+        "[6] Y. Yorozu, M. Hirano, K. Oka, and Y. Tanigawa, \"Electron",
+        "if they have been defined in the abstract.",
+        "spectroscopy studies on magneto-optical media and plastic",
+        "substrate interface,\" IEEE Trans. J. Magn. Japan, vol. 2, pp.",
+        "740-741, August 1987 [Digests 9th Annual conf. Magn.",
+        "C. Equations",
+        "Japan, p.3012,1982]",
+        "Number equations consecutively with equation numbers in",
+        "parentheses flush with the right margin, as in (1).To make",
+        "your equations more compact, you may use the solidus (/),",
+        "the exp function, or appropriate exponents. Italicize Roman",
+        "symbols for quantities and variables, but not Greek symbols.",
+        "Use a long dash rather than a hyphen for a minus sign. Use",
+        "parentheses to avoid ambiguities in denominators. Punctuate",
+        "equations with commas or periods when they are part of a",
+        "sentence, like this,",
+        "\\begin{align*}\\int_{0}^{r_{2}}&F(r,\\mathbf{m})dr dr\\mathbf{m}=\\left\\|\\mathbf{g}_{r_{2}}\\mid(2\\mathbf{p}_{0})\\right\\|\\\\\\downarrow&\\int_{0}^{\\infty}\\exp^{(-\\mathbf{m})}\\left|z_{j}-z_{1}\\right|\\left|\\mathbf{g}^{-1}J_{1}(\\mathbf{m}r_{2})J_{0}(\\mathbf{m}r_{1})d\\mathbf{m}\\right|\\end{align*}",
+        " ``\\mathrm{Eq}",
+        "(1)",
+        "(1)"
+      ],
+      "rec_scores": [
+        0.9654698967933655,
+        0.9938412308692932,
+        0.9448287487030029,
+        0.9981502890586853,
+        0.9244676828384399,
+        0.913969099521637,
+        0.9363098740577698,
+        0.9714991450309753,
+        0.9608060121536255,
+        0.8205813765525818,
+        0.9395630955696106,
+        0.9487857818603516,
+        0.9899727702140808,
+        0.9864234924316406,
+        0.9613624811172485,
+        0.9598411321640015,
+        0.951587975025177,
+        0.9455853700637817,
+        0.9617553353309631,
+        0.897989809513092,
+        0.9993380308151245,
+        0.9603950381278992,
+        0.9646868109703064,
+        0.9421575665473938,
+        0.9662545323371887,
+        0.958501935005188,
+        0.9670254588127136,
+        0.9671114683151245,
+        0.9280299544334412,
+        0.9468992352485657,
+        0.9324195384979248,
+        0.9702603220939636,
+        0.994032084941864,
+        0.9785915613174438,
+        0.9998327493667603,
+        0.9503415822982788,
+        0.9641265273094177,
+        0.9129989147186279,
+        0.9371909499168396,
+        0.9704298377037048,
+        0.9630628824234009,
+        0.929855465888977,
+        0.9967914819717407,
+        0.9516728520393372,
+        0.9469559192657471,
+        0.9465084671974182,
+        0.9581500291824341,
+        0.9438971877098083,
+        0.9353700280189514,
+        0.9077479839324951,
+        0.9180598258972168,
+        0.9359502196311951,
+        0.9931777119636536,
+        0.9990950226783752,
+        0.9458948969841003,
+        0.960910439491272,
+        0.949580192565918,
+        0.9573894739151001,
+        0.997088611125946,
+        0.9446170330047607,
+        0.9477332830429077,
+        0.9139117002487183,
+        0.9646283388137817,
+        0.9269902110099792,
+        0.9491609930992126,
+        0.9531416893005371,
+        0.9526875019073486,
+        0.964570939540863,
+        0.9513136148452759,
+        0.9519463777542114,
+        0.9360124468803406,
+        0.9228489398956299,
+        0.9491804242134094,
+        0.967662513256073,
+        0.9600525498390198,
+        0.9804198145866394,
+        1,
+        1,
+        1,
+        1
+      ],
+      "rec_polys": [
+        "[[289 171]\n ...\n [288 202]]",
+        "[[1134  172]\n ...\n [1134  202]]",
+        "[[279 202]\n ...\n [279 234]]",
+        "[[290 229]\n ...\n [290 264]]",
+        "[[651 250]\n ...\n [651 278]]",
+        "[[632 278]\n ...\n [632 305]]",
+        "[[633 306]\n ...\n [633 330]]",
+        "[[674 332]\n ...\n [674 353]]",
+        "[[833 331]\n ...\n [833 352]]",
+        "[[ 47 346]\n ...\n [ 46 380]]",
+        "[[632 355]\n ...\n [632 382]]",
+        "[[ 50 374]\n ...\n [ 49 396]]",
+        "[[255 441]\n ...\n [256 469]]",
+        "[[633 432]\n ...\n [633 453]]",
+        "[[ 46 486]\n ...\n [ 45 513]]",
+        "[[652 483]\n ...\n [652 506]]",
+        "[[631 508]\n ...\n [631 534]]",
+        "[[ 69 540]\n ...\n [ 69 567]]",
+        "[[632 536]\n ...\n [632 559]]",
+        "[[ 49 568]\n ...\n [ 49 595]]",
+        "[[631 560]\n ...\n [631 590]]",
+        "[[ 51 597]\n ...\n [ 51 621]]",
+        "[[ 50 623]\n ...\n [ 50 647]]",
+        "[[ 50 651]\n ...\n [ 50 675]]",
+        "[[773 644]\n ...\n [773 668]]",
+        "[[ 52 679]\n ...\n [ 52 703]]",
+        "[[ 70 704]\n ...\n [ 70 731]]",
+        "[[654 699]\n ...\n [654 723]]",
+        "[[ 51 732]\n ...\n [ 51 755]]",
+        "[[634 727]\n ...\n [634 748]]",
+        "[[ 51 761]\n ...\n [ 51 781]]",
+        "[[ 73 786]\n ...\n [ 73 809]]",
+        "[[717 778]\n ...\n [717 801]]",
+        "[[ 52 814]\n ...\n [ 52 837]]",
+        "[[852 830]\n ...\n [852 854]]",
+        "[[ 51 841]\n ...\n [ 51 864]]",
+        "[[ 51 868]\n ...\n [ 51 891]]",
+        "[[ 49 892]\n ...\n [ 49 919]]",
+        "[[633 884]\n ...\n [633 907]]",
+        "[[671 907]\n ...\n [671 930]]",
+        "[[ 51 920]\n ...\n [ 51 944]]",
+        "[[670 931]\n ...\n [670 954]]",
+        "[[ 53 948]\n ...\n [ 53 969]]",
+        "[[671 958]\n ...\n [671 979]]",
+        "[[ 73 973]\n ...\n [ 73 996]]",
+        "[[ 634  983]\n ...\n [ 634 1006]]",
+        "[[  52  998]\n ...\n [  52 1022]]",
+        "[[ 663 1009]\n ...\n [ 663 1029]]",
+        "[[  53 1027]\n ...\n [  53 1047]]",
+        "[[ 634 1034]\n ...\n [ 634 1057]]",
+        "[[ 663 1060]\n ...\n [ 663 1081]]",
+        "[[ 662 1084]\n ...\n [ 662 1107]]",
+        "[[  53 1102]\n ...\n [  53 1123]]",
+        "[[ 661 1109]\n ...\n [ 661 1132]]",
+        "[[ 634 1136]\n ...\n [ 634 1157]]",
+        "[[  74 1155]\n ...\n [  73 1178]]",
+        "[[ 633 1161]\n ...\n [ 633 1184]]",
+        "[[  55 1183]\n ...\n [  55 1205]]",
+        "[[ 660 1191]\n ...\n [ 661 1213]]",
+        "[[  54 1208]\n ...\n [  54 1232]]",
+        "[[ 633 1211]\n ...\n [ 633 1234]]",
+        "[[  56 1236]\n ...\n [  56 1257]]",
+        "[[ 663 1237]\n ...\n [ 663 1261]]",
+        "[[ 662 1260]\n ...\n [ 662 1283]]",
+        "[[ 662 1285]\n ...\n [ 662 1308]]",
+        "[[  56 1314]\n ...\n [  55 1339]]",
+        "[[ 664 1312]\n ...\n [ 664 1333]]",
+        "[[  76 1369]\n ...\n [  75 1393]]",
+        "[[  54 1394]\n ...\n [  54 1421]]",
+        "[[  53 1421]\n ...\n [  53 1448]]",
+        "[[  54 1446]\n ...\n [  54 1473]]",
+        "[[  54 1472]\n ...\n [  54 1499]]",
+        "[[  54 1499]\n ...\n [  53 1523]]",
+        "[[  53 1524]\n ...\n [  52 1547]]",
+        "[[  53 1551]\n ...\n [  52 1575]]",
+        "[[  53 1579]\n ...\n [  52 1600]]",
+        [
+          [
+            633,
+            88
+          ],
+          [
+            1108,
+            88
+          ],
+          [
+            1108,
+            213
+          ],
+          [
+            633,
+            213
+          ]
+        ],
+        [
+          [
+            1133,
+            298
+          ],
+          [
+            1170,
+            298
+          ],
+          [
+            1170,
+            322
+          ],
+          [
+            1133,
+            322
+          ]
+        ],
+        [
+          [
+            793,
+            329
+          ],
+          [
+            830,
+            329
+          ],
+          [
+            830,
+            353
+          ],
+          [
+            793,
+            353
+          ]
+        ],
+        [
+          [
+            635,
+            330
+          ],
+          [
+            671,
+            330
+          ],
+          [
+            671,
+            353
+          ],
+          [
+            635,
+            353
+          ]
+        ]
+      ],
+      "vis_fonts": [
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>",
+        "<paddlex.utils.fonts.Font object at 0x000001E60D183450>"
+      ],
+      "textline_orientation_angles": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rec_boxes": "[[288.      ... 205.     ]\n ...\n [635.37317 ... 353.87054]]",
+      "rec_labels": [
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "formula",
+        "formula",
+        "formula",
+        "formula"
+      ]
+    },
+    "table_res_list": [],
+    "seal_res_list": [],
+    "chart_res_list": [],
+    "formula_res_list": [
+      {
+        "input_path": null,
+        "page_index": null,
+        "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]",
+        "rec_formula": "\\begin{align*}\\int_{0}^{r_{2}}&F(r,\\mathbf{m})dr dr\\mathbf{m}=\\left\\|\\mathbf{g}_{r_{2}}\\mid(2\\mathbf{p}_{0})\\right\\|\\\\\\downarrow&\\int_{0}^{\\infty}\\exp^{(-\\mathbf{m})}\\left|z_{j}-z_{1}\\right|\\left|\\mathbf{g}^{-1}J_{1}(\\mathbf{m}r_{2})J_{0}(\\mathbf{m}r_{1})d\\mathbf{m}\\right|\\end{align*}",
+        "formula_region_id": 1,
+        "dt_polys": [
+          "633.3827",
+          "88.26835",
+          "1108.4523",
+          "213.9761"
+        ]
+      },
+      {
+        "input_path": null,
+        "page_index": null,
+        "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [ 98 ...  98]]]",
+        "rec_formula": " ``\\mathrm{Eq}",
+        "formula_region_id": 2,
+        "dt_polys": [
+          "1133.1361",
+          "298.03705",
+          "1170.2115",
+          "322.06573"
+        ]
+      },
+      {
+        "input_path": null,
+        "page_index": null,
+        "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[254 ... 254]\n  ...\n  [255 ... 255]]]",
+        "rec_formula": "(1)",
+        "formula_region_id": 3,
+        "dt_polys": [
+          "793.67773",
+          "329.24295",
+          "830.2627",
+          "353.54483"
+        ]
+      },
+      {
+        "input_path": null,
+        "page_index": null,
+        "input_img": "[[[255 ... 255]\n  ...\n  [255 ... 255]]\n\n ...\n\n [[255 ... 255]\n  ...\n  [255 ... 255]]]",
+        "rec_formula": "(1)",
+        "formula_region_id": 4,
+        "dt_polys": [
+          "635.37317",
+          "330.7243",
+          "671.30725",
+          "353.87054"
+        ]
+      }
+    ],
+    "parsing_res_list": [
+      "\n\n#################\nindex:\t0\nlabel:\timage\nregion_label:\tvision\nbbox:\t[168, 97, 464, 306]\ncontent:\tthis is \na sample \nfigure \n\n#################",
+      "\n\n#################\nindex:\t1\nlabel:\tfigure_title\nregion_label:\tvision_title\nbbox:\t[47, 353, 589, 399]\ncontent:\tFig.1 This is a sample figureCaptions exceeding one line are arranged like this.\n\n#################",
+      "\n\n#################\nindex:\t2\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[257, 442, 389, 464]\ncontent:\tHelpful Hints \n#################",
+      "\n\n#################\nindex:\t3\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[46, 490, 176, 510]\ncontent:\tA. References \n#################",
+      "\n\n#################\nindex:\t4\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[46, 543, 594, 702]\ncontent:\tList and number all references at the end of the paper. When referring to them in the text, type the corresponding reference number in square brackets as shown at the end of this sentence[1]. Number the citations consecutively. The sentence punctuation follows the brackets. Do not use \"Ref. [3]\" or \"reference [3\" except at the beginning of a sentence.\n#################",
+      "\n\n#################\nindex:\t5\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[47, 706, 606, 780]\ncontent:\tNumber footnotes separately in superscripts. Place the actual footnote at the bottom of the column in which it is cited.Do not put footmotes in the reference list.\n\n#################",
+      "\n\n#################\nindex:\t6\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[47, 785, 592, 967]\ncontent:\tGive all authors' names; do not use \"et al\" unless there are six authors or more. Papers that have not been published,even if they have been submitted for publication, should be cited as \"unpublished\"[4]. Papers that have been accepted for publication should be cited as \"in press\"[5]. Capitalize only the first word in paper title, except for proper nouns and element symbols.\n\n#################",
+      "\n\n#################\nindex:\t7\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[49, 972, 590, 1047]\ncontent:\tFor papers published in translated journals, please give the English citation first, followed by the original foreignlanguage citations [6]\n\n#################",
+      "\n\n#################\nindex:\t8\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[52, 1102, 330, 1123]\ncontent:\tB.Abbreviations and Acronyms \n#################",
+      "\n\n#################\nindex:\t9\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[52, 1156, 592, 1259]\ncontent:\tDefine abbreviations and acronyms the first time they are used. Acronyms such as MOSFET, ac and dc do not have to be defined. Redefine acronyms when first used in the text even if they have been defined in the abstract.\n\n#################",
+      "\n\n#################\nindex:\t10\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[54, 1316, 175, 1337]\ncontent:\tC. Equations \n#################",
+      "\n\n#################\nindex:\t11\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[51, 1371, 588, 1604]\ncontent:\tNumber equations consecutively with equation numbers in parentheses flush with the right margin, as in (1).To make your equations more compact, you may use the solidus (/),the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols.Use a long dash rather than a hyphen for a minus sign. Use parentheses to avoid ambiguities in denominators. Punctuate equations with commas or periods when they are part of a sentence, like this,\n#################",
+      "\n\n#################\nindex:\t12\nlabel:\tformula\nregion_label:\tnormal_text\nbbox:\t[633, 88, 1108, 213]\ncontent:\t\\begin{align*}\\int_{0}^{r_{2}}&F(r,\\mathbf{m})dr dr\\mathbf{m}=\\left\\|\\mathbf{g}_{r_{2}}\\mid(2\\mathbf{p}_{0})\\right\\|\\\\\\downarrow&\\int_{0}^{\\infty}\\exp^{(-\\mathbf{m})}\\left|z_{j}-z_{1}\\right|\\left|\\mathbf{g}^{-1}J_{1}(\\mathbf{m}r_{2})J_{0}(\\mathbf{m}r_{1})d\\mathbf{m}\\right|\\end{align*}\n#################",
+      "\n\n#################\nindex:\t13\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[629, 247, 1174, 377]\ncontent:\tBe sure that the symbols in your equation have been defined before the equation appears or immediately following. When you refer to equations in the text, refer to (1). Do not use $ ``\\mathrm{Eq}$ $(1)$ or \"Equation $(1)$ except at the beginning of a sentence:\"Equation (1) is used….\"\n#################",
+      "\n\n#################\nindex:\t14\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[629, 431, 873, 450]\ncontent:\tD. Other Recommendations \n#################",
+      "\n\n#################\nindex:\t15\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[629, 481, 1174, 583]\ncontent:\tUse either one or two spaces between sections, and between text and tables or figures, to manipulate the column length.Use two spaces after periods at the end of sentences (full stops).\n\n#################",
+      "\n\n#################\nindex:\t16\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[771, 644, 1033, 665]\ncontent:\tSummary and Conclusions \n#################",
+      "\n\n#################\nindex:\t17\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[630, 696, 1177, 747]\ncontent:\tThis template will get you through a sample article. The template will be available via Web. The URL is:\n#################",
+      "\n\n#################\nindex:\t18\nlabel:\ttext\nregion_label:\tnormal_text\nbbox:\t[714, 776, 1062, 800]\ncontent:\thttp://www.bcasj.or.jp/vlsi_sym/\n#################",
+      "\n\n#################\nindex:\t19\nlabel:\tparagraph_title\nregion_label:\tparagraph_title\nbbox:\t[851, 829, 954, 853]\ncontent:\tReferences \n#################",
+      "\n\n#################\nindex:\t20\nlabel:\treference\nregion_label:\tnormal_text\nbbox:\t[632, 881, 1183, 1334]\ncontent:\t[1] G.Eason, B. Noble, and I. N. Sneddon, \"On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,\" Phil. Trans. Roy. Soc.London, vol. A27, pp.529-551, April 1955.\n[2] J. Clerk Maxwell, A Treaties on Electricity and Magnetism,3rd ed., Vol. 2, Oxford: Clarendon Press, 1892, pp. 68-73.[3] I. S. Jacobs and C. P.Bean,'Fine particles, thin films and exchange anisotropy,\" in Magnetism, Vol. IⅢ, G. T. Rado and H. Suhl, Eds. New York: Academic Press, 1963, pp. 271350.\n[4] M. Smith, \"Title of paper optional here,,\" unpulished [5] K. Rose, \"Title of paper with only first word capitalized,,\" in press.\n[6] Y. Yorozu, M. Hirano, K. Oka, and Y. Tanigawa, \"Electron spectroscopy studies on magneto-optical media and plastic substrate interface,\" IEEE Trans. J. Magn. Japan, vol. 2, pp.740-741, August 1987 [Digests 9th Annual conf. Magn.Japan, p.3012,1982]\n\n#################",
+      "\n\n#################\nindex:\t21\nlabel:\tformula_number\nregion_label:\tunordered\nbbox:\t[1139, 174, 1161, 196]\ncontent:\t(1)\n#################"
+    ],
+    "imgs_in_doc": [
+      {
+        "path": "imgs/img_in_image_box_168_97_464_306.jpg",
+        "img": "<PIL.Image.Image image mode=RGB size=296x209 at 0x1E6521FEA90>",
+        "coordinate": [
+          168,
+          97,
+          464,
+          306
+        ],
+        "score": 0.9365847706794739
+      }
+    ],
+    "model_settings": {
+      "use_doc_preprocessor": true,
+      "use_seal_recognition": false,
+      "use_table_recognition": true,
+      "use_formula_recognition": true,
+      "use_chart_recognition": false,
+      "use_region_detection": true,
+      "format_block_content": false,
+      "markdown_ignore_labels": [
+        "number",
+        "footnote",
+        "header",
+        "header_image",
+        "footer",
+        "footer_image",
+        "aside_text"
+      ]
+    }
+  }
+]

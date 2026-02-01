@@ -1,0 +1,66 @@
+.adminHeader {
+  height: 50px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  border-bottom: 1px solid #222;
+}
+
+.profileWrapper {
+  position: relative;
+}
+
+.profileButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  min-width: 220px;
+  padding: 1rem;
+  z-index: 300;
+}
+
+.userName {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.userEmail {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.logoutButton {
+  width: 100%;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  cursor: pointer;
+}

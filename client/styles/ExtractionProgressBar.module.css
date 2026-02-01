@@ -1,0 +1,152 @@
+.progressContainer {
+  width: 100%;
+  max-width: 800px;
+  padding: 40px 60px;
+  background: #101010;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.stepContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.stepCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.stepCircle.completed {
+  background: transparent;
+  box-shadow: 0 4px 8px 0 #fff inset, 0 8px 12px 0 #ad5fff inset,
+    0 24px 24px 0 #471eec inset;
+  /* box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3); */
+}
+
+.stepCircle.active {
+  background: transparent;
+  box-shadow: 0 2px 8px rgba(71, 30, 236, 0.3);
+}
+
+.stepCircle.pending {
+  background: #e0e0e0;
+  box-shadow: none;
+}
+
+.stepCircle.pending .stepNumber {
+  color: #999;
+}
+
+.loadingAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: loader-rotate 2s linear infinite;
+  z-index: 0;
+}
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(90deg);
+    box-shadow: 0 4px 8px 0 #fff inset, 0 8px 12px 0 #ad5fff inset,
+      0 24px 24px 0 #471eec inset;
+  }
+  50% {
+    transform: rotate(270deg);
+    box-shadow: 0 4px 8px 0 #fff inset, 0 8px 4px 0 #d60a47 inset,
+      0 16px 24px 0 #311e80 inset;
+  }
+  100% {
+    transform: rotate(450deg);
+    box-shadow: 0 4px 8px 0 #fff inset, 0 8px 12px 0 #ad5fff inset,
+      0 24px 24px 0 #471eec inset;
+  }
+}
+
+.stepNumber {
+  color: #666;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.stepCircle.active .stepNumber {
+  color: white;
+  z-index: 2;
+}
+
+.connector {
+  flex: 1;
+  height: 4px;
+  margin: 0 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.connectorCompleted {
+  background: transparent;
+  box-shadow: 0 4px 8px 0 #fff inset, 0 8px 12px 0 #ad5fff inset,
+    0 24px 24px 0 #471eec inset;
+}
+
+.connectorPending {
+  background: #e0e0e0;
+}
+
+.stepLabel {
+  margin-top: 12px;
+  max-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stepLabelText {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  width: 48px;
+}
+
+.stepCircle.active ~ .stepLabel,
+.stepCircle.completed ~ .stepLabel {
+  color: #333;
+}
+
+.stepCircle.pending ~ .stepLabel {
+  color: #999;
+}

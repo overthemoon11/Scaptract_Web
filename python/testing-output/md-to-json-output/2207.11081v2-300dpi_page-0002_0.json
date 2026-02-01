@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "source": "PPStructureV3",
+    "total_length": 6405,
+    "line_count": 55
+  },
+  "content": {
+    "Experiment ": "",
+    "I mplementation ": "We choose the ViT-base and do self-supervised pretraining on the AffectNet training set. The pretraining length is 300epochs and the other settings of pretraining and fine-tuning are same as MAE (He et al. 2022). Due to the tranining set of AffectNet is imbalanced whereas the validation set is balanced, oversampling strategy is used while fine-tuning. We train the ViT model on each FER training subset and then evaluate on each FER testing subset.",
+    "Result ": "We compare our method with two pretraining methods using supervised learning and MAE on ImageNet-1K in Table 1. Although AffectNet is almost 4× smaller than ImageNet1K, pretraining with MAE on AffectNet yields better fine-tuning results than both supervised learning and MAE  pretraining methods on ImageNet-1K. Our method based on ViT-base achieves the best accuracy of 90.22%, 61.73% and 89.00% on RAF-DB, AffectNet and FER-Plus respectively without any data augmentation, which gives us a powerful  pretraining model for the subsequent work. And the performance reaches 91.07 % on RAF-DB, 62.42% on AfectNet,and90.18% on FER-Plus if regular augmentation is used (random horizontal flipping, color jitter and afi ne transformation).\n\n[TABLE_0]\n\n[TABLE_1]\n\nIn addition, to demonstrate the effectiveness of our method,we compare it withtheexisting state-of-the-art methods. In Table2,SCN (Wangetal. 2020)and RUL (Zhang, Wang, and Deng 2021) adopt ResNet as the backbone and introduce different uncertainty learning methods to tackle the uncertainty problem in FER. MVT (Li et al.2021) proposes the combination of grid-wise local attention and token-based global attention to overcome the weakness of CNN-based in long-range relation modeling. Compared with these well-designed SOTA methods, our results on the three FER datasets demonstrate the effectiveness and scalability of our method.\n\n{\n  \"type\": \"table\",\n  \"html\": \"<div style=\\\"text-align: center;\\\">Table 3: Comparsion with the state of the art on RAF-DB,AffectNet and FER-Plus. </div>\\n\\n\\n\\n<div style=\\\"text-align: center;\\\"><html><body><table border=\\\"1\\\"><tr><td>method</td><td>year T</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>SCN (Wang et al. 2020)</td><td>2020</td><td>88.14%</td><td>60.23%</td><td>89.35%</td></tr><tr><td>RUL (Zhang, Wang, and Deng 2021)</td><td>2021</td><td>88.98%</td><td>61.43%</td><td></td></tr><tr><td>MVT (Li et al. 2021)</td><td>2021</td><td>88.26%</td><td>61.40%</td><td>89.22%</td></tr><tr><td>Ours</td><td>2022</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>\",\n  \"rows\": [\n    [\n      \"method\",\n      \"year T\",\n      \"RAF-DB\",\n      \"AffectNet\",\n      \"FER-Plus\"\n    ],\n    [\n      \"SCN (Wang et al. 2020)\",\n      \"2020\",\n      \"88.14%\",\n      \"60.23%\",\n      \"89.35%\"\n    ],\n    [\n      \"RUL (Zhang, Wang, and Deng 2021)\",\n      \"2021\",\n      \"88.98%\",\n      \"61.43%\",\n      \"\"\n    ],\n    [\n      \"MVT (Li et al. 2021)\",\n      \"2021\",\n      \"88.26%\",\n      \"61.40%\",\n      \"89.22%\"\n    ],\n    [\n      \"Ours\",\n      \"2022\",\n      \"91.07%\",\n      \"62.42%\",\n      \"90.18%\"\n    ]\n  ],\n  \"row_count\": 5,\n  \"column_count\": 5\n}",
+    "Conclusions ": "In this paper, we demonstrate that a vanilla ViT-based backbone pretrained by MAE method (He et al. 2022) without extra data is comparable to the SOTA work. The presented method achieves 91.07% on RAF-DB, 62.42% on AfectNet,and 90.18% on FER-Plus, which can serve as a transparent ViT-based baseline for FER studies.",
+    "References ": "Baltrusaitis, T.; Zadeh, A.; Lim, Y. C.; and Morency, L.-P. 2018.Openface 2.0: Facial behavior analysis toolkit. In 2018 13th IEEE international conference on automatic face & gesture recognition (FG 2018), 59–66. IEEE.\nChen, X.; Ding, M.; Wang, X.; Xin, Y.; Mo, S.; Wang, Y.; Han,S.; Luo, P.;Zeng,G.;and Wang, J. 2022. Context autoencoder for self-supervised representation learning. arXiv preprint arXiv:2202.03026.\nDosovitskiy, A.;Beyer, L.; Kolesnikov, A.; Weissenborn, D.;Zhai, X.; Unterthiner, T.; Dehghani, M.; Minderer,M.; Heigold,G.; Gelly,S.;et al. 2020. Animage is worth 16x16 words:Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.\nGong, W.; An, Z.; and Elfi ky, N. M. 2022. Deep learning-based microexpression recognition: a survey. Neural Computing and Applications 1–24.\nGuo, Y.; Zhang, L.; Hu, Y.; He, X.; and Gao, J. 2016. Ms-celeb1m: A dataset and benchmark for large-scale face recognition. In European conference on computer vision, 87-102. Springer.He, K.; Zhang, X.; Ren, S.; and Sun, J. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, 770–778.He, K.; Chen, X.; Xie, S.; Li, Y.; Dollar, P.; and Girshick, R. 2022.Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 16000–16009.\nHwang, H.; Kim, S.; Park, W.-J.; Seo, J.; Ko, K.; and Yeo, H. 2022.Vision transformer equipped with neural resizer on facial expression recognition task. In ICASSP_2022-2022 IEEE International "
+  },
+  "structured_elements": {
+    "tables": [
+      {
+        "type": "table",
+        "html": "<div style=\"text-align: center;\">Table 1: MAE pretraining vs. supervised pretraining, numbersevaluated byfine-tuning theViT-base weightsfrom ImageNet-1K and AffectNet on downstream FER datasets without data augmentation. </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td> pretrain data</td><td>RAF-DB</td><td>AffectNet</td></tr><tr><td>Supervised</td><td>IN1K</td><td>85.14%</td><td>57.10%</td></tr><tr><td>MAE</td><td>IN1K</td><td>88.49%</td><td>60.87%</td></tr><tr><td>MAE</td><td>AffectNet</td><td>90.22%</td><td>61.73%</td></tr></table></body></html></div>",
+        "rows": [
+          [
+            "method",
+            "pretrain data",
+            "RAF-DB",
+            "AffectNet"
+          ],
+          [
+            "Supervised",
+            "IN1K",
+            "85.14%",
+            "57.10%"
+          ],
+          [
+            "MAE",
+            "IN1K",
+            "88.49%",
+            "60.87%"
+          ],
+          [
+            "MAE",
+            "AffectNet",
+            "90.22%",
+            "61.73%"
+          ]
+        ],
+        "row_count": 4,
+        "column_count": 4
+      },
+      {
+        "type": "table",
+        "html": "<div style=\"text-align: center;\">Table 2: More ViT-based results on RAF-DB, AffectNet and FER-Plus. Here, data augmentation is employed. The variants, ViT-small and ViT-tiny are proposed in DeiT (Touvron et al. 2021). </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td> pretrain data</td><td>ViT variants</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-samll</td><td>87.19%</td><td>57.91%</td><td>88.46%</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-tiny</td><td>87.03%</td><td>58.28%</td><td>88.56%</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-base</td><td>87.22%</td><td>57.99%</td><td>88.91%</td></tr><tr><td>MAE</td><td>AffectNet</td><td>Vit-base</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>",
+        "rows": [
+          [
+            "method",
+            "pretrain data",
+            "ViT variants",
+            "RAF-DB",
+            "AffectNet",
+            "FER-Plus"
+          ],
+          [
+            "Supervised",
+            "IN1K",
+            "ViT-samll",
+            "87.19%",
+            "57.91%",
+            "88.46%"
+          ],
+          [
+            "Supervised",
+            "IN1K",
+            "ViT-tiny",
+            "87.03%",
+            "58.28%",
+            "88.56%"
+          ],
+          [
+            "Supervised",
+            "IN1K",
+            "ViT-base",
+            "87.22%",
+            "57.99%",
+            "88.91%"
+          ],
+          [
+            "MAE",
+            "AffectNet",
+            "Vit-base",
+            "91.07%",
+            "62.42%",
+            "90.18%"
+          ]
+        ],
+        "row_count": 5,
+        "column_count": 6
+      },
+      {
+        "type": "table",
+        "html": "<div style=\"text-align: center;\">Table 3: Comparsion with the state of the art on RAF-DB,AffectNet and FER-Plus. </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td>year T</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>SCN (Wang et al. 2020)</td><td>2020</td><td>88.14%</td><td>60.23%</td><td>89.35%</td></tr><tr><td>RUL (Zhang, Wang, and Deng 2021)</td><td>2021</td><td>88.98%</td><td>61.43%</td><td></td></tr><tr><td>MVT (Li et al. 2021)</td><td>2021</td><td>88.26%</td><td>61.40%</td><td>89.22%</td></tr><tr><td>Ours</td><td>2022</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>",
+        "rows": [
+          [
+            "method",
+            "year T",
+            "RAF-DB",
+            "AffectNet",
+            "FER-Plus"
+          ],
+          [
+            "SCN (Wang et al. 2020)",
+            "2020",
+            "88.14%",
+            "60.23%",
+            "89.35%"
+          ],
+          [
+            "RUL (Zhang, Wang, and Deng 2021)",
+            "2021",
+            "88.98%",
+            "61.43%",
+            ""
+          ],
+          [
+            "MVT (Li et al. 2021)",
+            "2021",
+            "88.26%",
+            "61.40%",
+            "89.22%"
+          ],
+          [
+            "Ours",
+            "2022",
+            "91.07%",
+            "62.42%",
+            "90.18%"
+          ]
+        ],
+        "row_count": 5,
+        "column_count": 5
+      }
+    ],
+    "images": [],
+    "equations": [],
+    "sections": [
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Experiment",
+        "content": ""
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "I mplementation",
+        "content": "We choose the ViT-base and do self-supervised pretraining on the AffectNet training set. The pretraining length is 300epochs and the other settings of pretraining and fine-tuning are same as MAE (He et al. 2022). Due to the tranining set of AffectNet is imbalanced whereas the validation set is balanced, oversampling strategy is used while fine-tuning. We train the ViT model on each FER training subset and then evaluate on each FER testing subset."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Result",
+        "content": "We compare our method with two pretraining methods using supervised learning and MAE on ImageNet-1K in Table 1. Although AffectNet is almost 4× smaller than ImageNet1K, pretraining with MAE on AffectNet yields better fine-tuning results than both supervised learning and MAE  pretraining methods on ImageNet-1K. Our method based on ViT-base achieves the best accuracy of 90.22%, 61.73% and 89.00% on RAF-DB, AffectNet and FER-Plus respectively without any data augmentation, which gives us a powerful  pretraining model for the subsequent work. And the performance reaches 91.07 % on RAF-DB, 62.42% on AfectNet,and90.18% on FER-Plus if regular augmentation is used (random horizontal flipping, color jitter and afi ne transformation).\n\n\n\n<div style=\"text-align: center;\">Table 1: MAE pretraining vs. supervised pretraining, numbersevaluated byfine-tuning theViT-base weightsfrom ImageNet-1K and AffectNet on downstream FER datasets without data augmentation. </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td> pretrain data</td><td>RAF-DB</td><td>AffectNet</td></tr><tr><td>Supervised</td><td>IN1K</td><td>85.14%</td><td>57.10%</td></tr><tr><td>MAE</td><td>IN1K</td><td>88.49%</td><td>60.87%</td></tr><tr><td>MAE</td><td>AffectNet</td><td>90.22%</td><td>61.73%</td></tr></table></body></html></div>\n\n\n<div style=\"text-align: center;\">Table 2: More ViT-based results on RAF-DB, AffectNet and FER-Plus. Here, data augmentation is employed. The variants, ViT-small and ViT-tiny are proposed in DeiT (Touvron et al. 2021). </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td> pretrain data</td><td>ViT variants</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-samll</td><td>87.19%</td><td>57.91%</td><td>88.46%</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-tiny</td><td>87.03%</td><td>58.28%</td><td>88.56%</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-base</td><td>87.22%</td><td>57.99%</td><td>88.91%</td></tr><tr><td>MAE</td><td>AffectNet</td><td>Vit-base</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>\n\n\nIn addition, to demonstrate the effectiveness of our method,we compare it withtheexisting state-of-the-art methods. In Table2,SCN (Wangetal. 2020)and RUL (Zhang, Wang, and Deng 2021) adopt ResNet as the backbone and introduce different uncertainty learning methods to tackle the uncertainty problem in FER. MVT (Li et al.2021) proposes the combination of grid-wise local attention and token-based global attention to overcome the weakness of CNN-based in long-range relation modeling. Compared with these well-designed SOTA methods, our results on the three FER datasets demonstrate the effectiveness and scalability of our method.\n\n\n\n<div style=\"text-align: center;\">Table 3: Comparsion with the state of the art on RAF-DB,AffectNet and FER-Plus. </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td>year T</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>SCN (Wang et al. 2020)</td><td>2020</td><td>88.14%</td><td>60.23%</td><td>89.35%</td></tr><tr><td>RUL (Zhang, Wang, and Deng 2021)</td><td>2021</td><td>88.98%</td><td>61.43%</td><td></td></tr><tr><td>MVT (Li et al. 2021)</td><td>2021</td><td>88.26%</td><td>61.40%</td><td>89.22%</td></tr><tr><td>Ours</td><td>2022</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>"
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "Conclusions",
+        "content": "In this paper, we demonstrate that a vanilla ViT-based backbone pretrained by MAE method (He et al. 2022) without extra data is comparable to the SOTA work. The presented method achieves 91.07% on RAF-DB, 62.42% on AfectNet,and 90.18% on FER-Plus, which can serve as a transparent ViT-based baseline for FER studies."
+      },
+      {
+        "type": "section",
+        "level": 2,
+        "title": "References",
+        "content": "Baltrusaitis, T.; Zadeh, A.; Lim, Y. C.; and Morency, L.-P. 2018.Openface 2.0: Facial behavior analysis toolkit. In 2018 13th IEEE international conference on automatic face & gesture recognition (FG 2018), 59–66. IEEE.\nChen, X.; Ding, M.; Wang, X.; Xin, Y.; Mo, S.; Wang, Y.; Han,S.; Luo, P.;Zeng,G.;and Wang, J. 2022. Context autoencoder for self-supervised representation learning. arXiv preprint arXiv:2202.03026.\nDosovitskiy, A.;Beyer, L.; Kolesnikov, A.; Weissenborn, D.;Zhai, X.; Unterthiner, T.; Dehghani, M.; Minderer,M.; Heigold,G.; Gelly,S.;et al. 2020. Animage is worth 16x16 words:Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.\nGong, W.; An, Z.; and Elfi ky, N. M. 2022. Deep learning-based microexpression recognition: a survey. Neural Computing and Applications 1–24.\nGuo, Y.; Zhang, L.; Hu, Y.; He, X.; and Gao, J. 2016. Ms-celeb1m: A dataset and benchmark for large-scale face recognition. In European conference on computer vision, 87-102. Springer.He, K.; Zhang, X.; Ren, S.; and Sun, J. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, 770–778.He, K.; Chen, X.; Xie, S.; Li, Y.; Dollar, P.; and Girshick, R. 2022.Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 16000–16009.\nHwang, H.; Kim, S.; Park, W.-J.; Seo, J.; Ko, K.; and Yeo, H. 2022.Vision transformer equipped with neural resizer on facial expression recognition task. In ICASSP_2022-2022 IEEE International"
+      }
+    ],
+    "table_count": 3,
+    "image_count": 0,
+    "equation_count": 0,
+    "section_count": 5
+  },
+  "raw_markdown": "scale data, which enables the model to have strong representational capabiliis.For FER, fctNt isthelargest available in-the-wild dataset that contains more than one million face images collected from the Internet by keyword searching. Among them, about 400K images are manually labeled.We clean the dataset based on the label file and use OpenFace (Baltrusaitisetal.2018)forfacealignment, leaving 269,316 images for self-supervised training.\n\n## Experiment \n\n## I mplementation \n\nWe choose the ViT-base and do self-supervised pretraining on the AffectNet training set. The pretraining length is 300epochs and the other settings of pretraining and fine-tuning are same as MAE (He et al. 2022). Due to the tranining set of AffectNet is imbalanced whereas the validation set is balanced, oversampling strategy is used while fine-tuning. We train the ViT model on each FER training subset and then evaluate on each FER testing subset.\n\n\n\n## Result \n\nWe compare our method with two pretraining methods using supervised learning and MAE on ImageNet-1K in Table 1. Although AffectNet is almost 4× smaller than ImageNet1K, pretraining with MAE on AffectNet yields better fine-tuning results than both supervised learning and MAE  pretraining methods on ImageNet-1K. Our method based on ViT-base achieves the best accuracy of 90.22%, 61.73% and 89.00% on RAF-DB, AffectNet and FER-Plus respectively without any data augmentation, which gives us a powerful  pretraining model for the subsequent work. And the performance reaches 91.07 % on RAF-DB, 62.42% on AfectNet,and90.18% on FER-Plus if regular augmentation is used (random horizontal flipping, color jitter and afi ne transformation).\n\n\n\n<div style=\"text-align: center;\">Table 1: MAE pretraining vs. supervised pretraining, numbersevaluated byfine-tuning theViT-base weightsfrom ImageNet-1K and AffectNet on downstream FER datasets without data augmentation. </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td> pretrain data</td><td>RAF-DB</td><td>AffectNet</td></tr><tr><td>Supervised</td><td>IN1K</td><td>85.14%</td><td>57.10%</td></tr><tr><td>MAE</td><td>IN1K</td><td>88.49%</td><td>60.87%</td></tr><tr><td>MAE</td><td>AffectNet</td><td>90.22%</td><td>61.73%</td></tr></table></body></html></div>\n\n\n<div style=\"text-align: center;\">Table 2: More ViT-based results on RAF-DB, AffectNet and FER-Plus. Here, data augmentation is employed. The variants, ViT-small and ViT-tiny are proposed in DeiT (Touvron et al. 2021). </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td> pretrain data</td><td>ViT variants</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-samll</td><td>87.19%</td><td>57.91%</td><td>88.46%</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-tiny</td><td>87.03%</td><td>58.28%</td><td>88.56%</td></tr><tr><td>Supervised</td><td>IN1K</td><td>ViT-base</td><td>87.22%</td><td>57.99%</td><td>88.91%</td></tr><tr><td>MAE</td><td>AffectNet</td><td>Vit-base</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>\n\n\nIn addition, to demonstrate the effectiveness of our method,we compare it withtheexisting state-of-the-art methods. In Table2,SCN (Wangetal. 2020)and RUL (Zhang, Wang, and Deng 2021) adopt ResNet as the backbone and introduce different uncertainty learning methods to tackle the uncertainty problem in FER. MVT (Li et al.2021) proposes the combination of grid-wise local attention and token-based global attention to overcome the weakness of CNN-based in long-range relation modeling. Compared with these well-designed SOTA methods, our results on the three FER datasets demonstrate the effectiveness and scalability of our method.\n\n\n\n<div style=\"text-align: center;\">Table 3: Comparsion with the state of the art on RAF-DB,AffectNet and FER-Plus. </div>\n\n\n\n<div style=\"text-align: center;\"><html><body><table border=\"1\"><tr><td>method</td><td>year T</td><td>RAF-DB</td><td>AffectNet</td><td>FER-Plus</td></tr><tr><td>SCN (Wang et al. 2020)</td><td>2020</td><td>88.14%</td><td>60.23%</td><td>89.35%</td></tr><tr><td>RUL (Zhang, Wang, and Deng 2021)</td><td>2021</td><td>88.98%</td><td>61.43%</td><td></td></tr><tr><td>MVT (Li et al. 2021)</td><td>2021</td><td>88.26%</td><td>61.40%</td><td>89.22%</td></tr><tr><td>Ours</td><td>2022</td><td>91.07%</td><td>62.42%</td><td>90.18%</td></tr></table></body></html></div>\n\n\n## Conclusions \n\nIn this paper, we demonstrate that a vanilla ViT-based backbone pretrained by MAE method (He et al. 2022) without extra data is comparable to the SOTA work. The presented method achieves 91.07% on RAF-DB, 62.42% on AfectNet,and 90.18% on FER-Plus, which can serve as a transparent ViT-based baseline for FER studies.\n\n\n\n## References \n\nBaltrusaitis, T.; Zadeh, A.; Lim, Y. C.; and Morency, L.-P. 2018.Openface 2.0: Facial behavior analysis toolkit. In 2018 13th IEEE international conference on automatic face & gesture recognition (FG 2018), 59–66. IEEE.\nChen, X.; Ding, M.; Wang, X.; Xin, Y.; Mo, S.; Wang, Y.; Han,S.; Luo, P.;Zeng,G.;and Wang, J. 2022. Context autoencoder for self-supervised representation learning. arXiv preprint arXiv:2202.03026.\nDosovitskiy, A.;Beyer, L.; Kolesnikov, A.; Weissenborn, D.;Zhai, X.; Unterthiner, T.; Dehghani, M.; Minderer,M.; Heigold,G.; Gelly,S.;et al. 2020. Animage is worth 16x16 words:Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.\nGong, W.; An, Z.; and Elfi ky, N. M. 2022. Deep learning-based microexpression recognition: a survey. Neural Computing and Applications 1–24.\nGuo, Y.; Zhang, L.; Hu, Y.; He, X.; and Gao, J. 2016. Ms-celeb1m: A dataset and benchmark for large-scale face recognition. In European conference on computer vision, 87-102. Springer.He, K.; Zhang, X.; Ren, S.; and Sun, J. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, 770–778.He, K.; Chen, X.; Xie, S.; Li, Y.; Dollar, P.; and Girshick, R. 2022.Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 16000–16009.\nHwang, H.; Kim, S.; Park, W.-J.; Seo, J.; Ko, K.; and Yeo, H. 2022.Vision transformer equipped with neural resizer on facial expression recognition task. In ICASSP_2022-2022 IEEE International "
+}

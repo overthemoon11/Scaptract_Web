@@ -1,0 +1,52 @@
+.adminSidebar {
+  width: 250px;
+  background: black;
+  color: white;
+  min-height: 100vh;
+  padding: 2.5rem 0 0 0;
+  position: fixed;
+  left: 0;
+  top: 64px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.menuLink {
+  width: 90%;
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  box-shadow: none;
+  display: block;
+}
+
+.menuLink:hover,
+.menuLinkActive {
+  background: #444;
+  color: #fff;
+}

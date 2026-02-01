@@ -1,0 +1,32 @@
+[
+  {
+    "ground_truth": "ground_truth/2302.12854v2.txt",
+    "ocr_markdown": "testing-output/pdf-output/2302.12854v2.md",
+    "input_type": "PDF"
+  },
+  {
+    "ground_truth": "ground_truth/2302.12854v2.txt",
+    "ocr_markdown": "testing-output/image-output/2302.12854v2_page-0001_0.md",
+    "input_type": "Image"
+  },
+  {
+    "ground_truth": "ground_truth/2207.11081v2.txt",
+    "ocr_markdown": "testing-output/pdf-output/2207.11081v2.md",
+    "input_type": "PDF"
+  },
+  {
+    "ground_truth": "ground_truth/2207.11081v2.txt",
+    "ocr_markdown": "testing-output/image-output/2207.11081v2_page-0001_0.md",
+    "input_type": "Image"
+  },
+  {
+    "ground_truth": "ground_truth/1911.05395v1.txt",
+    "ocr_markdown": "testing-output/pdf-output/1911.05395v1.md",
+    "input_type": "PDF"
+  },
+  {
+    "ground_truth": "ground_truth/1911.05395v1.txt",
+    "ocr_markdown": "testing-output/image-output/1911.05395v1_page-0001_0.md",
+    "input_type": "Image"
+  }
+]

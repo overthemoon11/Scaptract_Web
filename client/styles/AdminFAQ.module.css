@@ -1,0 +1,136 @@
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+}
+
+.addBtn {
+  background: #fff;
+  border: 1.5px solid #111;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 16px;
+  transition: background 0.15s;
+}
+.addBtn:hover {
+  background: #f5f5f5;
+}
+
+.filterRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.filterBtn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  padding: 6px 16px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.faqTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 30px;
+}
+
+.tableHeadRow {
+  border-bottom: 2px solid #eee;
+  text-align: left;
+}
+
+.tableRow {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.titleCell {
+  font-weight: 500;
+  max-width: 260px;
+  padding: 16px 8px;
+}
+
+.descCell {
+  max-width: 400px;
+  padding: 16px 8px;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.statusActive {
+  display: inline-block;
+  padding: 4px 18px;
+  border-radius: 16px;
+  color: #fff;
+  background: #4ade80;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.statusBanned {
+  display: inline-block;
+  padding: 4px 18px;
+  border-radius: 16px;
+  color: #fff;
+  background: #f87171;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.editBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  color: #888;
+  font-size: 15px;
+}
+
+.paginationPrev {
+  margin-right: 16px;
+  color: #ccc;
+}
+
+.paginationCurrent {
+  margin: 0 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.paginationPage {
+  margin: 0 8px;
+}
+
+.paginationEllipsis {
+  margin: 0 8px;
+}
+
+.paginationNext {
+  margin-left: 16px;
+}

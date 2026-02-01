@@ -1,0 +1,798 @@
+.documentsContainer {
+  min-height: 100vh;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 35px 0;
+}
+
+.mainTitle {
+  font-size: 40px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 20px;
+  /* text-shadow: 0 0 20px rgba(248, 209, 227, 0.5);
+  background: linear-gradient(45deg, #f8d1e3, #fff, #f8d1e3);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease-in-out infinite; */
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.mainDescription {
+  font-size: 16px;
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.fileSection {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border: none;
+}
+
+.uploadArea {
+  border: 3px dashed black;
+  border-radius: 15px;
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.uploadArea.dragOver {
+  border-color: black;
+  background: rgba(248, 209, 227, 0.15);
+  box-shadow: 0 0 30px rgba(248, 209, 227, 0.4);
+}
+
+.uploadIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.uploadIcon {
+  width: 48px;
+  height: 48px;
+  color: black;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.uploadText {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.chooseFileButton {
+  margin-top: 25px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /* box-shadow: 0 0 2px 0 #fff, 0 0 6px 0 #ad5fff, 0 0 9px 0 #471eec; */
+}
+
+.chooseFileButton:hover {
+  box-shadow: 0 0 2px 0 #fff, 0 0 10px 0 #ad5fff, 0 0 15px 0 #471eec;
+}
+
+.chooseFileButton:active {
+  transform: translateY(0);
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.supportedFormats {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.supportedFormatsText {
+  color: #666;
+  font-size: 14px;
+}
+
+.supportedFormatsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formatList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.formatItem {
+  background: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.formatItem:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px white;
+}
+
+.fileInfo {
+  margin-top: 20px;
+  padding: 20px;
+  background: black;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.fileInfoText {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+.processingStatus {
+  margin-top: 20px;
+  padding: 20px;
+  background: black;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+.errorStatus {
+  background: black;
+  border-color: white;
+  color: white;
+}
+
+.uploadProgress {
+  width: 100%;
+  height: 6px;
+  background: black;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(45deg, black, white);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Uploaded Files Section */
+.uploadedFilesSection {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 50px;
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.uploadedFilesTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.fileCard {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px 0 rgb(180, 180, 180) inset;
+}
+
+.fileCard:hover {
+  /* box-shadow: 0 0 2px 0 #fff inset, 0 0 10px 0 #ad5fff inset,
+    0 0 15px 0 #471eec inset; */
+  box-shadow: 0 0 10px 0 rgb(180, 180, 180);
+}
+
+.fileIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fileIcon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.fileName {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+.fileSize {
+  color: #b0b0b0;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.fileCard:hover .deleteButton {
+  opacity: 1;
+}
+
+.deleteButton:hover {
+  background: rgba(255, 0, 0, 1);
+  transform: scale(1.1);
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.addFileButton {
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+}
+
+.addFileButton:hover {
+  background: #101010;
+  box-shadow: 0 0 2px 0 #fff, 0 0 10px 0 #ad5fff, 0 0 15px 0 #471eec;
+}
+
+.startExtractionButton {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  height: 48px;
+}
+
+.startExtractionButton:hover:not(:disabled) {
+  background: #101010;
+  box-shadow: 0 0 2px 0 #fff, 0 0 10px 0 #ad5fff, 0 0 15px 0 #471eec;
+}
+
+.startExtractionButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Processing Overlay */
+.processingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.processingContent {
+  background: #101010;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  border-radius: 50px;
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.processingSpinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(248, 209, 227, 0.3);
+  border-top: 3px solid #f8d1e3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.processingText {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1024px) {
+  .documentsContainer {
+    padding: 30px 15px;
+    margin-right: 15px;
+    border-radius: 30px;
+  }
+
+  .titleSection {
+    padding: 25px 0;
+    margin-bottom: 40px;
+  }
+
+  .mainTitle {
+    font-size: 36px;
+  }
+
+  .fileSection {
+    padding: 30px;
+  }
+
+  .uploadedFilesSection {
+    padding: 30px 40px;
+  }
+
+  .filesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .documentsContainer {
+    padding: 25px 15px;
+    margin: 0 20px;
+    border-radius: 25px;
+  }
+
+  .titleSection {
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .mainTitle {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .mainDescription {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .fileSection {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .uploadArea {
+    padding: 50px 20px;
+    border-radius: 12px;
+  }
+
+  .uploadText {
+    font-size: 20px;
+  }
+
+  .chooseFileButton {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .supportedFormatsTitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .formatList {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .formatItem {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .uploadedFilesSection {
+    padding: 25px 30px;
+    border-radius: 15px;
+  }
+
+  .uploadedFilesTitle {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .filesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .fileCard {
+    padding: 30px 15px;
+  }
+
+  .fileIcon {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .fileName {
+    font-size: 13px;
+  }
+
+  .fileSize {
+    font-size: 11px;
+  }
+
+  .actionButtons {
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .addFileButton {
+    width: 48px;
+    min-width: 48px;
+  }
+
+  .startExtractionButton {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .fileInfo,
+  .processingStatus {
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .fileInfoText {
+    font-size: 13px;
+  }
+
+  .processingContent {
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;
+  }
+
+  .processingText {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .documentsContainer {
+    padding: 20px 10px;
+    margin: 0 20px;
+    border-radius: 20px;
+  }
+
+  .titleSection {
+    padding: 15px 0;
+    margin-bottom: 25px;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+    margin-bottom: 12px;
+    padding: 0 10px;
+  }
+
+  .mainDescription {
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .fileSection {
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+
+  .uploadArea {
+    padding: 40px 15px;
+    border-radius: 10px;
+  }
+
+  .uploadIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .uploadText {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .chooseFileButton {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .supportedFormats {
+    margin-top: 30px;
+  }
+
+  .supportedFormatsTitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .supportedFormatsText {
+    font-size: 12px;
+  }
+
+  .formatList {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .formatItem {
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .uploadedFilesSection {
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+
+  .uploadedFilesTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .filesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .fileCard {
+    padding: 25px 12px;
+    border-radius: 12px;
+  }
+
+  .fileIcon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .fileName {
+    font-size: 12px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
+  .fileSize {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .deleteButton {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+  }
+
+  .addFileButton {
+    width: 100%;
+    max-width: 300px;
+    height: 44px;
+  }
+
+  .startExtractionButton {
+    width: 100%;
+    max-width: 300px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .processingContent {
+    padding: 25px 20px;
+    border-radius: 20px;
+    margin: 15px;
+  }
+
+  .processingSpinner {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .processingText {
+    font-size: 14px;
+  }
+
+  .fileInfo,
+  .processingStatus {
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .fileInfoText {
+    font-size: 12px;
+  }
+
+  .uploadProgress {
+    height: 5px;
+    margin-top: 12px;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 360px) {
+  .documentsContainer {
+    padding: 15px 8px;
+    margin: 0 15px;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+  }
+
+  .mainDescription {
+    font-size: 13px;
+  }
+
+  .uploadArea {
+    padding: 30px 12px;
+  }
+
+  .uploadText {
+    font-size: 16px;
+  }
+
+  .filesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .fileCard {
+    padding: 20px 10px;
+  }
+
+  .fileIcon {
+    font-size: 32px;
+  }
+
+  .fileName {
+    font-size: 11px;
+  }
+
+  .formatList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# System Environment
+The user's current operating system is Windows 11. 
+All code snippets and instructions provided should be compatible with, or specifically tailored for, this environment.
+
+CMD is Powershell, dont use &&, use ;

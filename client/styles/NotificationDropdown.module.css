@@ -1,0 +1,182 @@
+.dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  width: 340px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  padding-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 18px 24px 10px 24px;
+  border-bottom: 2px solid #eee;
+}
+.markAll {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 400;
+  transition: color 0.15s;
+}
+.markAll:hover {
+  color: #111;
+}
+.list {
+  max-height: 340px;
+  overflow-y: auto;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.08rem;
+  background: #fff;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item:hover {
+  background: #f2f2f2;
+}
+.icon {
+  font-size: 1.5rem;
+  margin-right: 2px;
+}
+.message {
+  flex: 1;
+  color: #222;
+}
+.unread {
+  background: #f0f0f0;
+}
+.read {
+  background: #fff;
+}
+.loading,
+.empty {
+  padding: 32px 0;
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Three-body loading animation - From Uiverse.io by dovatgabriel */
+.threeBody {
+  --uib-size: 35px;
+  --uib-speed: 0.8s;
+  --uib-color: #5d3fd3;
+  position: relative;
+  display: inline-block;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+.threeBodyDot {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+}
+
+.threeBodyDot::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: var(--uib-color);
+  border-radius: 50%;
+}
+
+.threeBodyDot:nth-child(1) {
+  bottom: 5%;
+  left: 0;
+  transform: rotate(60deg);
+  transform-origin: 50% 85%;
+}
+
+.threeBodyDot:nth-child(1)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite ease-in-out;
+  animation-delay: calc(var(--uib-speed) * -0.3);
+}
+
+.threeBodyDot:nth-child(2) {
+  bottom: 5%;
+  right: 0;
+  transform: rotate(-60deg);
+  transform-origin: 50% 85%;
+}
+
+.threeBodyDot:nth-child(2)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15)
+    ease-in-out;
+}
+
+.threeBodyDot:nth-child(3) {
+  bottom: -5%;
+  left: 0;
+  transform: translateX(116.666%);
+}
+
+.threeBodyDot:nth-child(3)::after {
+  top: 0;
+  left: 0;
+  animation: wobble2 var(--uib-speed) infinite ease-in-out;
+}
+
+@keyframes spin78236 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble1 {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
+@keyframes wobble2 {
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}

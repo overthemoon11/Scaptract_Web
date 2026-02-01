@@ -1,0 +1,54 @@
+.layoutRoot {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.layoutFlex {
+  display: flex;
+  flex: 1;
+  margin-top: 82px;
+  min-height: calc(100vh - 82px);
+  position: relative;
+}
+
+.layoutMain {
+  flex: 1;
+  padding: 0;
+  margin-left: 220px;
+  width: 100%;
+  min-height: calc(100vh - 82px);
+  padding-bottom: 2rem;
+  background-color: #101010;
+  transition: margin-left 0.2s ease-in-out;
+  will-change: margin-left;
+}
+
+.layoutMainNoSidebar {
+  margin-left: 0;
+}
+
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+  .layoutMain {
+    margin-left: 0;
+  }
+
+  .layoutFlex{
+    margin-top: 72px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s ease-in;
+}

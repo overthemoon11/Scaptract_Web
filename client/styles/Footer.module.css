@@ -1,0 +1,154 @@
+.footer {
+  background-color: #101010;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  z-index: 100;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 25px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.brandSection {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .brandSection {
+    margin-bottom: 0;
+  }
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 0.75rem;
+}
+
+.logoImage {
+  height: 50px;
+  width: auto;
+}
+
+.brandName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: white;
+}
+
+.socialLinksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .socialLinksSection {
+    align-items: flex-end;
+  }
+}
+
+.socialSectionTitle {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.divider {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+@media (min-width: 1024px) {
+  .divider {
+    margin: 2rem 0;
+  }
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .bottomSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .copyright {
+    text-align: left;
+  }
+}
+
+.copyrightLink {
+  color: white;
+  text-decoration: none;
+}
+
+.copyrightLink:hover {
+  text-decoration: underline;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.socialLink {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.socialIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+

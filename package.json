@@ -1,0 +1,25 @@
+{
+  "name": "scaptract",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:ocr": "cd python && py -3.11 ocr.py",
+    "dev:img-ocr-api": "cd python && py -3.11 img-ocr-api.py",
+    "dev:pdf-ocr-api": "cd python && py -3.11 pdf-ocr-api.py",
+    "dev:all": "concurrently -n \"client,server,img-ocr,pdf-ocr\" -c \"blue,green,yellow,magenta\" \"npm run dev:client\" \"npm run dev:server\" \"npm run dev:img-ocr-api\" \"npm run dev:pdf-ocr-api\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "baseline-browser-mapping": "^2.9.15",
+    "concurrently": "^9.1.2",
+    "supabase": "^2.54.11"
+  }
+}
